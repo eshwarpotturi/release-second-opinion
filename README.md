@@ -1,5 +1,7 @@
 # Release Second Opinion
 
+**Live dashboard:** https://eshwarpotturi.github.io/release-second-opinion/
+
 An AI agent reads vendor release-impact assessments (RIAs), rates every feature's GxP validation risk **blind** (it never sees the vendor's rating), then compares against the vendor's published rating and the vendor's own post-publication corrections.
 
 **Data:** 12 public Veeva Vault RIAs, 19R1 to 22R3 (539 features, 53 explicit rating corrections with from/to). Later RIAs (23R1+) were not at the same download path and are not included.
