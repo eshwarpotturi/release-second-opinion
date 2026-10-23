@@ -11,7 +11,7 @@ main{padding:16px 48px 48px;display:grid;grid-template-columns:repeat(12,1fr);ga
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;cursor:pointer}
 .card:hover{border-color:var(--v)}.card h2{margin:0 0 4px;font-size:28px}.card p.n{margin:0 0 12px;color:var(--mute);font-size:20px}
 .kpis{grid-column:span 12;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.kpi .big{font-size:64px;white-space:nowrap;font-weight:700;line-height:1}.kpi .lab{font-size:22px;margin-top:8px}
+.kpi .big{font-size:54px;white-space:nowrap;font-weight:700;line-height:1}.kpi .lab{font-size:22px;margin-top:8px}
 .c7{grid-column:span 7}.c5{grid-column:span 5}.c12{grid-column:span 12}
 svg text{fill:var(--ink);font-size:18px}svg .m{fill:var(--mute)}
 table{border-collapse:collapse;width:100%}th,td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;font-size:20px}
@@ -23,16 +23,16 @@ tr.row{cursor:pointer}tr.row:hover{background:var(--hi)}
 .leg span{margin-right:24px;font-size:20px}.dot{display:inline-block;width:16px;height:16px;border-radius:4px;margin-right:6px;vertical-align:-2px}
 .msg{grid-column:span 12;background:var(--card);border-left:10px solid var(--v);border-radius:12px;padding:20px 28px;font-size:32px;font-weight:600}
 </style></head><body>
-<header><div><h1>Vendor risk ratings drift. Check them before you plan validation.</h1>
-<div class="sub">An AI rated 539 Veeva Vault release features without seeing Veeva's rating. Then we compared. Releases 19R1 to 22R3. Click any tile for detail.</div></div>
+<header><div><h1>Vendor risk ratings move. Treat the first one as a draft.</h1>
+<div class="sub">An AI rated 4,016 Veeva Vault release features without seeing Veeva's rating. 23 releases, 19R1 (2019) to 26R2 (2026). We compared the two, and checked Veeva's own corrections. Click any tile for detail.</div></div>
 <button class="t" id="th">Dark mode</button></header>
 <main>
-<div class="msg">One message: the vendor's risk bar moved over time, and the first published rating is a draft.</div>
+<div class="msg">One message: Veeva changes its risk ratings after publishing, and its bar moves over time. Do not plan testing from the first rating alone.</div>
 <div class="kpis" id="kpis"></div>
-<div class="card c7" data-k="high"><h2>1. Veeva rates fewer features High over time</h2><p class="n">Share of features rated High, early and late releases. Veeva's share falls by more than half. The AI's falls by about a quarter, and not significantly.</p><div class="leg"><span><i class="dot" style="background:var(--v)"></i>Veeva</span><span><i class="dot" style="background:var(--a)"></i>gpt-4.1</span><span><i class="dot" style="background:var(--b)"></i>gpt-5.1</span></div><div id="ch1"></div></div>
-<div class="card c5" data-k="corr"><h2>2. Ratings are corrected after publication</h2><p class="n">53 corrections in change logs. Red: downgrades. Blue: upgrades.</p><div id="ch2"></div></div>
+<div class="card c7" data-k="high"><h2>1. Veeva's High bar moves over time</h2><p class="n">Share of features rated High, in three periods. Veeva's share halves in 2021–22, then partly recovers. The AI's share moves less.</p><div class="leg"><span><i class="dot" style="background:var(--v)"></i>Veeva</span><span><i class="dot" style="background:var(--a)"></i>gpt-4.1</span><span><i class="dot" style="background:var(--b)"></i>gpt-5.1</span></div><div id="ch1"></div></div>
+<div class="card c5" data-k="corr"><h2>2. Veeva corrects ratings after publishing</h2><p class="n">129 corrections in change logs, by release. Red: downgrades. Blue: upgrades.</p><div id="ch2"></div></div>
 <div class="card c5" data-k="mat"><h2>3. The AI is more cautious than Veeva</h2><p class="n">Veeva rating (rows) against gpt-5.1 rating (columns). Number of features.</p><div id="ch3"></div></div>
-<div class="card c7" data-k="queue"><h2>4. Review queue: 129 features to challenge</h2><p class="n">Both AI models disagree with Veeva. Click a row for each model's reason.</p><div id="tb" style="max-height:520px;overflow:auto"></div></div>
+<div class="card c7" data-k="queue"><h2>4. Review first: features the AI rates High and Veeva does not</h2><p class="n">Both AI models rate High; Veeva rates N/A or Low. Click a row for each model's reason.</p><div id="tb" style="max-height:520px;overflow:auto"></div></div>
 </main>
 <div id="modal"><div class="box"><button class="x" onclick="closeM()">×</button><div id="mb"></div></div></div>
 <script>
@@ -43,19 +43,17 @@ try{if(localStorage.th)root.dataset.theme=localStorage.th}catch(e){}
 $("#th").onclick=()=>{const t=root.dataset.theme==="dark"?"light":"dark";root.dataset.theme=t;try{localStorage.th=t}catch(e){}}
 function openM(h){$("#mb").innerHTML=h;$("#modal").style.display="flex"}function closeM(){$("#modal").style.display="none"}
 $("#modal").onclick=e=>{if(e.target.id==="modal")closeM()};document.onkeydown=e=>{if(e.key==="Escape")closeM()};
-const down=D.corr.filter(c=>["High","Medium","Low","N/A"].indexOf(c.to)>["High","Medium","Low","N/A"].indexOf(c.frm)).length;
-const cross=D.corr.filter(c=>c.cross).length;
-$("#kpis").innerHTML=[["12.3% → 5.0%","Veeva High rating, early vs late releases (p = 0.006)","high"],["70%","of 53 post-publication corrections were downgrades","corr"],["57%","of corrections changed whether Veeva tests the feature","corr"],["98 of 160","features Veeva rates N/A are rated Medium or High by both AI models","queue"]]
+$("#kpis").innerHTML=[["72%",`of ${D.corr.n} ratings Veeva corrected after publishing were downgrades`,"corr"],["53%",`of corrections changed whether Veeva tests the feature (${D.corr.cross} of ${D.corr.n})`,"corr"],[D.queue.top+" features","both AI models rate High; Veeva rates N/A or Low. "+D.queue.kw+" mention audit or security","queue"],[D.eras[1].v+"% → "+D.eras[2].v+"% → "+D.eras[3].v+"%","Veeva High share: 19R1–21R2, 21R3–22R3, 23R1–26R2","high"]]
 .map(k=>`<div class="card kpi" data-k="${k[2]}"><div class="big">${k[0]}</div><div class="lab">${k[1]}</div></div>`).join("");
 // chart 1
-(function(){const P=[["19R1 to 21R2",[12.3,16.5,19.8]],["21R3 to 22R3",[5.0,12.7,15.5]]],cols=["var(--v)","var(--a)","var(--b)"],W=900,H=420,L=60,B=60,T=30,mx=25;const y=v=>H-B-v/mx*(H-B-T);
+(function(){const E=[1,2,3].map(k=>D.eras[k]),cols=["var(--v)","var(--a)","var(--b)"],W=900,H=420,L=60,B=70,T=30,mx=25;const y=v=>H-B-v/mx*(H-B-T);
 let s=`<svg viewBox="0 0 ${W} ${H}" width="100%">`;for(let v=0;v<=mx;v+=5)s+=`<line x1="${L}" x2="${W-20}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text class="m" x="${L-8}" y="${y(v)+6}" text-anchor="end">${v}%</text>`;
-P.forEach((p,i)=>{const g=L+40+i*400;p[1].forEach((v,j)=>{const x=g+j*110;s+=`<rect x="${x}" y="${y(v)}" width="96" height="${H-B-y(v)}" rx="6" fill="${cols[j]}"/><text x="${x+48}" y="${y(v)-8}" text-anchor="middle" font-weight="700" font-size="24">${v}%</text>`});s+=`<text x="${g+160}" y="${H-22}" text-anchor="middle" font-size="22">${p[0]}</text>`});
+E.forEach((p,i)=>{const g=L+20+i*280;[p.v,p.A,p.B].forEach((v,j)=>{const x=g+j*84;s+=`<rect x="${x}" y="${y(v)}" width="74" height="${H-B-y(v)}" rx="6" fill="${cols[j]}"/><text x="${x+37}" y="${y(v)-8}" text-anchor="middle" font-weight="700" font-size="20">${v}%</text>`});s+=`<text x="${g+126}" y="${H-34}" text-anchor="middle" font-size="20">${p.rels}</text><text class="m" x="${g+126}" y="${H-10}" text-anchor="middle" font-size="17">${p.n} features</text>`});
 $("#ch1").innerHTML=s+"</svg>"})();
 // chart 2
-(function(){const rs=D.dr,W=600,H=420,L=50,B=50,T=20,mx=20,bw=34;const y=v=>H-B-v/mx*(H-B-T);const gw=(W-L)/rs.length;
+(function(){const rs=D.dr,W=700,H=420,L=50,B=50,T=20,mx=20,bw=13;const y=v=>H-B-v/mx*(H-B-T);const gw=(W-L)/rs.length;
 let s=`<svg viewBox="0 0 ${W} ${H}" width="100%">`;for(let v=0;v<=mx;v+=5)s+=`<line x1="${L}" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)"/><text class="m" x="${L-8}" y="${y(v)+6}" text-anchor="end">${v}</text>`;
-rs.forEach((r,i)=>{const cx=L+gw*i+gw/2;s+=`<rect x="${cx-bw}" y="${y(r.down)}" width="${bw-2}" height="${H-B-y(r.down)}" fill="var(--bad)"/><rect x="${cx+2}" y="${y(r.up)}" width="${bw-2}" height="${H-B-y(r.up)}" fill="var(--v)"/><text class="m" x="${cx}" y="${H-18}" text-anchor="middle" font-size="15">${r.r}</text>`});
+rs.forEach((r,i)=>{const cx=L+gw*i+gw/2;s+=`<rect x="${cx-bw}" y="${y(r.down)}" width="${bw-2}" height="${H-B-y(r.down)}" fill="var(--bad)"/><rect x="${cx+2}" y="${y(r.up)}" width="${bw-2}" height="${H-B-y(r.up)}" fill="var(--v)"/><text class="m" transform="translate(${cx+3},${H-40}) rotate(-60)" text-anchor="end" font-size="14">${r.r}</text>`});
 $("#ch2").innerHTML=s+"</svg>"})();
 // chart 3
 function heat(m){const c=D.cats,W=620,cell=110,L=120,T=50;const mx=Math.max(...m.flat());let s=`<svg viewBox="0 0 ${W} 520" width="100%">`;
@@ -64,13 +62,13 @@ m.forEach((row,i)=>{s+=`<text x="${L-10}" y="${T+i*cell+cell/2+6}" text-anchor="
 return s+"</svg>"}
 $("#ch3").innerHTML=heat(D.mat.gpt51);
 // table
-$("#tb").innerHTML="<table><tr><th>Release</th><th>Feature</th><th>Veeva</th><th>AI</th></tr>"+D.queue.map((q,i)=>`<tr class="row" data-i="${i}"><td>${q.release}</td><td>${q.feature}</td><td><span class="tag">${q.veeva}</span></td><td><span class="tag">${q.gpt41}/${q.gpt51}</span></td></tr>`).join("")+"</table>";
-document.querySelectorAll("tr.row").forEach(r=>r.onclick=e=>{e.stopPropagation();const q=D.queue[r.dataset.i];openM(`<h2>${q.feature}</h2><p>${q.release} · ${q.application} · ${q.enablement} · ${q.default_impact}</p><p><b>Veeva:</b> ${q.veeva}</p><p><b>gpt-4.1 (${q.gpt41}):</b> ${q.w1}</p><p><b>gpt-5.1 (${q.gpt51}):</b> ${q.w2}</p>`)});
+$("#tb").innerHTML="<table><tr><th>Release</th><th>Feature</th><th>Veeva</th><th>AI</th></tr>"+D.qrows.map((q,i)=>`<tr class="row" data-i="${i}"><td>${q.release}</td><td>${q.feature}</td><td><span class="tag">${q.veeva}</span></td><td><span class="tag">${q.gpt41}/${q.gpt51}</span></td></tr>`).join("")+"</table>";
+document.querySelectorAll("tr.row").forEach(r=>r.onclick=e=>{e.stopPropagation();const q=D.qrows[r.dataset.i];openM(`<h2>${q.feature}</h2><p>${q.release} · ${q.application} · ${q.enablement} · ${q.default_impact}</p><p><b>Veeva:</b> ${q.veeva}</p><p><b>gpt-4.1 (${q.gpt41}):</b> ${q.w1}</p><p><b>gpt-5.1 (${q.gpt51}):</b> ${q.w2}</p>`)});
 // popups
 const pops={
-high:()=>`<h2>Veeva's High bar moved</h2><p>High-rated share: 12.3% in 19R1 to 21R2 (44 of 358) and 5.0% in 21R3 to 22R3 (9 of 181). Fisher exact p = 0.006. Veeva rated no feature High in 22R1 or 22R3.</p><p>The same features, rated by gpt-4.1 and gpt-5.1: 16.5% to 12.7% and 19.8% to 15.5%. Not a significant change (p = 0.31 and 0.24).</p><p><b>So what:</b> if you reuse last year's thresholds on a 2022 RIA, you compare against a different ruler. The AI is a reference, not ground truth.</p>`,
-corr:()=>`<h2>${D.corr.length} corrections with from/to ratings</h2><p>${down} downgrades, ${D.corr.length-down} upgrades. ${cross} changed whether Veeva validation-tests the feature.</p><table><tr><th>Release</th><th>Feature</th><th>Change</th></tr>`+D.corr.map(c=>`<tr><td>${c.release}</td><td>${c.feature}</td><td>${c.frm} → ${c.to}${c.cross?" ⚑":""}</td></tr>`).join("")+`</table><p>⚑ crosses the test line (Medium/High are tested).</p>`,
-mat:()=>`<h2>Veeva against the AI</h2><p>gpt-4.1: 44% exact agreement, kappa 0.21. gpt-5.1: 42%, kappa 0.18. The AI rates higher than Veeva 47–50% of the time and lower 8–9%.</p><p>It would send 78–83% of features to testing. Veeva sends 45%.</p><h3>gpt-4.1</h3>${heat(D.mat.gpt41)}`,
-queue:()=>`<h2>Review queue</h2><p>98 features Veeva rates N/A ("no validation impact") that both AI models rate Medium or High, plus 47 where both say High and Veeva does not (overlap removed: 129 total). Several are audit-trail or signature items, which Veeva's own rubric lists as High. These are items to check, not proven errors.</p>`};
+high:()=>{const e=D.eras;return `<h2>Veeva's High bar moves</h2><p>Share rated High by Veeva: ${e[1].v}% in ${e[1].rels} (${e[1].vHigh} of ${e[1].n}), ${e[2].v}% in ${e[2].rels} (${e[2].vHigh} of ${e[2].n}), ${e[3].v}% in ${e[3].rels} (${e[3].vHigh} of ${e[3].n}).</p><p>The drop to the middle period is significant (p = ${D.p.risk_12}); the recovery since is too (p = ${D.p.risk_23}). The AI's High share changes less, and not significantly between periods (gpt-4.1 p = ${D.p.A_12}, ${D.p.A_23}; gpt-5.1 p = ${D.p.B_12}, ${D.p.B_23}).</p><p><b>So what:</b> last year's thresholds do not carry over to this year's assessment. The AI is a reference, not ground truth.</p>`},
+corr:()=>`<h2>${D.corr.n} corrections with from/to ratings</h2><p>${D.corr.down} downgrades (${Math.round(100*D.corr.down/D.corr.n)}%), ${D.corr.up} upgrades. ${D.corr.cross} changed whether Veeva validation-tests the feature: ${D.corr.off} switched testing off, ${D.corr.on} switched it on.</p><p>The same pattern in both periods that publish from/to: 70% downgrades in 2019–2021, 74% in 2025–2026. Releases 21R2–25R2 mostly list names without from/to, so they are not counted.</p><table><tr><th>Release</th><th>Feature</th><th>Change</th></tr>`+D.corrlist.map(c=>`<tr><td>${c.release}</td><td>${c.feature}</td><td>${c.frm} → ${c.to}${c.cross?" ⚑":""}</td></tr>`).join("")+`</table><p>⚑ crosses the test line (Medium and High are tested).</p>`,
+mat:()=>`<h2>Veeva against the AI</h2><p>Across ${D.n} features: gpt-4.1 agrees exactly ${D.agree.A.exact}% of the time (kappa ${D.agree.A.kappa}); gpt-5.1 ${D.agree.B.exact}% (kappa ${D.agree.B.kappa}). The AI rates higher than Veeva ${D.agree.A.higher}–${D.agree.B.higher}% of the time and lower ${D.agree.B.lower}–${D.agree.A.lower}%.</p><p>It would send ${D.gate.A}–${D.gate.B}% of features to testing. Veeva sends ${D.gate.v}%.</p><p>The two models agree with each other on ${D.AB}%.</p><h3>gpt-4.1</h3>${heat(D.mat.gpt41)}`,
+queue:()=>`<h2>Review queue</h2><p>${D.queue.top} features where both AI models rate High and Veeva rates N/A or Low. ${D.queue.kw} have audit, signature, permission or security in the name, which Veeva's own rubric lists as High. Start there.</p><p>Wider list: ${D.queue.na_both} of the ${D.queue.na} features Veeva rates N/A ("no validation impact") are rated Medium or High by both models (${D.queue.na_both_auto} are auto-on). The full ${D.queue.total}-row list is <code>data/review_queue.csv</code> in the repo.</p><p>These are items to check, not proven errors. Veeva may know context the text lacks.</p>`};
 document.querySelectorAll(".card").forEach(c=>c.onclick=()=>openM(pops[c.dataset.k]()));
 </script></body></html>

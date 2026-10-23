@@ -52,3 +52,79 @@ release,feature,from,to
 21R2,Batch Release Process Support,High,Low
 21R2,Enablement Change: Extensible Controlled Copy,High,N/A
 21R2,Language Field Alignment,Low,N/A
+25R3,Record Check & Suggestions,Medium,Low
+25R3,Listedness from Core Datasheets,Medium,Low
+25R3,Spec Data Object Type Can No Longer Be Changed,Medium,N/A
+25R3,eCTD 4.0 Viewing,N/A,Low
+25R3,Asynchronous Audit Exports,Low,N/A
+25R3,Modular Content,N/A,Low
+25R3,Veeva AI,Low,N/A
+25R3,Auto-Population of Key Fields for All Stability Lab Samples,Medium,N/A
+25R3,Updated Indication Picklist,Low,N/A
+25R3,Genealogy Check Using Bill of Materials,Medium,N/A
+25R3,Operating System Information Tracking in Station Device Records,Low,N/A
+25R3,EUDAMED Container Packages Submission Generation,Medium,High
+25R3,RIM Bot Prediction Metrics Enhancement,Low,N/A
+25R3,Subgroups for Calculations,High,N/A
+26R1,Company Product Match Verification for Deprecated Product Registrations,Medium,Low
+26R1,Medical-CRM Connection,Low,Medium
+26R1,PromoMats-CRM Connection,Low,Medium
+26R1,Medical-CRM Connection,N/A,Low
+26R1,PromoMats-CRM Connection,N/A,Low
+26R1,Safety-EDC Connection,Low,N/A
+26R1,Safety-EDC Connection,Low,N/A
+26R1,Safety-EDC Connection,Low,N/A
+26R1,Composite Surveys,Medium,High
+26R1,Custom Sharing Rules on Reports,Low,Medium
+26R1,Execute Reports with Columns with Field Level Security,Low,Medium
+26R1,Migration Rendition Reuse for PDFs,Medium,N/A
+26R1,OCR Limit Increases,Low,N/A
+26R1,Standardized Word Markup,Medium,Low
+26R1,View All Workflow Participants,Medium,Low
+26R1,RIM-Clinical Operations Connection,Low,N/A
+26R1,Study Training-Clinical Operations Connection,Low,N/A
+26R1,Enhance No Subjects Enrolled Trigger Logic to Include Deleted in CDMS Status,N/A,Low
+26R1,Claims,Low,N/A
+26R1,PromoMats,Low,N/A
+26R1,Design Data Builder,Low,Medium
+26R1,Medical,Low,N/A
+26R1,Scientific Statements,Low,N/A
+26R1,Closing Items with Action Triggers,Medium,N/A
+26R1,Organization Scalability Enhancements,Low,High
+26R1,Quality Relationships Panel,Low,N/A
+26R1,Quality Relationships Panel,Low,N/A
+26R1,Standard Fields Updates for Validation Management,Low,N/A
+26R1,Station Manager Support for iOS 26,Low,N/A
+26R1,VPS,High,Low
+26R2,CLM Slide Comparison User Interface,Low,Medium
+26R2,Medical-CRM Connection,Medium,N/A
+26R2,Medical-CRM Connection,Medium,N/A
+26R2,PromoMats-CRM Connection,Medium,N/A
+26R2,PromoMats-CRM Connection,Medium,N/A
+26R2,HACCP Flow Diagram,N/A,Low
+26R2,HACCP Flow Diagram,Medium,Low
+26R2,Allow Disabling of Event Change Action Values,Low,N/A
+26R2,Medical-CRM Connection,Medium,Low
+26R2,PromoMats-CRM Connection,Medium,Low
+26R2,MLR,Low,N/A
+26R2,Add/Remove Responses Dialog Enhancements,Low,N/A
+26R2,Enable Scientific Communication Platform UI in All MedComms Vaults,Medium,N/A
+26R2,Update Component Security on Name Field on User Role Setup (Case) Object,Low,N/A
+26R2,Active Dossier,Low,N/A
+26R2,Automatic On-Demand Validation for Submission Validation Version Changes,Medium,N/A
+26R2,Bulk Export Scalability Improvement,Medium,Low
+26R2,Medical-CRM Connection,Medium,Low
+26R2,Fast Search,Low,N/A
+26R2,Improved Document Viewer,N/A,Medium
+26R2,Disclosures US Results,Medium,Low
+26R2,Generate Payable Items Supports Multi-Record Workflow,Medium,N/A
+26R2,New Standard Milestone Types,Low,N/A
+26R2,Payments,Low,Medium
+26R2,Additional LOD Picklist Value,Medium,N/A
+26R2,Complaint Agent & Deviation Agent,Medium,Low
+26R2,Complaint Contacts,Low,Medium
+26R2,Create Related Record,Low,Medium
+26R2,Document Change Control,Medium,High
+26R2,Populate Validation Viewer Role on Validation Management Records,Low,N/A
+26R2,QRM,Medium,Low
+26R2,Quiz Dynamic Sections,Low,N/A
