@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Veeva changes its own risk ratings</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#f6f5f1;--card:#fff;--ink:#14130f;--ink2:#55534b;--line:#dcdad2;--down:#d03b3b;--up:#2a78d6;--hi:#14130f}
+[data-theme=dark]{--bg:#161614;--card:#222220;--ink:#f0efec;--ink2:#b9b7ae;--line:#3a3935;--down:#e66767;--up:#3987e5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:22px/1.4 system-ui,Segoe UI,Arial,sans-serif;padding:20px 32px}
+header{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-bottom:14px}
+h1{font-size:44px;line-height:1.1;margin:0 0 6px;font-weight:650}.sub{font-size:24px;color:var(--ink2);margin:0}
+button.t{font:inherit;font-size:18px;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;cursor:pointer}
+.card:hover{border-color:var(--ink2)}.c4{grid-column:span 4}.c6{grid-column:span 6}.c12{grid-column:span 12}
+.k{font-size:64px;font-weight:700;line-height:1}.kl{font-size:20px;color:var(--ink2);margin-top:6px}
+h2{font-size:26px;margin:0 0 4px}.n{font-size:18px;color:var(--ink2);margin:0 0 10px}
+.bar{display:flex;height:56px;gap:3px;border-radius:6px;overflow:hidden;font-weight:650;color:#fff;font-size:24px}
+.bar div{display:flex;align-items:center;padding:0 14px}
+.row{display:grid;grid-template-columns:200px 1fr 1fr;gap:6px;align-items:center;margin:6px 0;font-size:20px}
+.l{display:flex;justify-content:flex-end}.seg{height:28px;cursor:pointer}.seg:hover{opacity:.8}
+.rel{display:flex;align-items:flex-end;gap:10px;height:230px;border-bottom:2px solid var(--line)}
+.rc{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;cursor:pointer}
+.rc span{font-size:16px;color:var(--ink2);position:absolute;margin-top:6px}
+.rc .s{width:100%;min-height:0}.rc:hover .s{opacity:.8}
+.lab{display:flex;gap:10px;margin-top:4px;font-size:17px;color:var(--ink2)}.lab div{flex:1;text-align:center}
+.mx{display:grid;grid-template-columns:110px repeat(4,1fr);gap:6px;font-size:20px;text-align:center}
+.mx b{font-weight:600;color:var(--ink2)}.mc{border-radius:6px;padding:12px 0;font-weight:650;cursor:pointer}
+.msg{font-size:30px;font-weight:650;margin:8px 0 18px;padding:14px 20px;border-left:8px solid var(--down);background:var(--card);border-radius:0 12px 12px 0}
+#m{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:9}
+#m .b{background:var(--card);border-radius:14px;padding:24px 30px;max-width:1100px;width:92%;max-height:88vh;overflow:auto;position:relative}
+#m .x{position:absolute;right:16px;top:10px;font-size:34px;background:none;border:0;color:var(--ink);cursor:pointer}
+table{border-collapse:collapse;width:100%;font-size:18px}td,th{border-bottom:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+.dn{color:var(--down);font-weight:650}.upc{color:var(--up);font-weight:650}
+footer{font-size:17px;color:var(--ink2);margin-top:14px}
+</style></head><body>
+<header><div><h1>Veeva changes its own risk ratings</h1><p class="sub">It usually lowers them after publishing. Treat the first rating as cautious.</p></div><button class="t" id="th">Dark mode</button></header>
+<div class="msg" id="msg"></div>
+<div class="grid" id="g"></div>
+<footer id="ft"></footer>
+<div id="m"><div class="b"><button class="x" onclick="cl()">×</button><div id="mb"></div></div></div>
+<script>
+const D=/*DATA*/null;
+const $=s=>document.querySelector(s),root=document.documentElement;
+try{if(localStorage.th)root.dataset.theme=localStorage.th}catch(e){}
+$('#th').onclick=()=>{const d=root.dataset.theme==='dark';root.dataset.theme=d?'light':'dark';try{localStorage.th=root.dataset.theme}catch(e){}$('#th').textContent=d?'Dark mode':'Light mode'};
+const pc=(a,b)=>Math.round(100*a/b);
+const cl=()=>{$('#m').style.display='none'};$('#m').onclick=e=>{if(e.target.id==='m')cl()};
+function tbl(rs){return '<table><tr><th>Release</th><th>Feature</th><th>Change</th><th>Section</th></tr>'+rs.map(r=>`<tr><td>${r.release}</td><td>${r.feature}${r.desc?`<div style="font-size:15px;color:var(--ink2)">${r.desc}</div>`:''}</td><td class="${r.dir==='down'?'dn':'upc'}">${r.frm} → ${r.to}${r.cross?' ⚑':''}</td><td>${r.section==='Unmatched'?'Not known':r.section}</td></tr>`).join('')+'</table><p style="font-size:16px">⚑ changes whether the feature is tested (Medium and High are tested).</p>'}
+function show(t,p,rs){$('#mb').innerHTML=`<h2>${t}</h2><p>${p}</p>`+tbl(rs);$('#m').style.display='flex'}
+const R=D.rows,by=f=>R.filter(f);
+$('#msg').innerHTML=`${pc(D.down,D.n)}% of Veeva's corrections lower the rating. ${D.off} switched testing off. ${D.on} switched it on.<div style="font-size:22px;font-weight:400;color:var(--ink2);margin-top:4px">The same pattern holds five years apart: ${pc(...D.early)}% lowered in 2019 to 2021, ${pc(...D.late)}% in 2025 to 2026.</div>`;
+let h='';
+h+=`<div class="card c4" id="k1"><div class="k">${D.n}</div><div class="kl">corrections with an old and new rating</div></div>`;
+h+=`<div class="card c4" id="k2"><div class="k" style="color:var(--down)">${pc(D.down,D.n)}%</div><div class="kl">lowered the rating (${D.down} of ${D.n})</div></div>`;
+h+=`<div class="card c4" id="k3"><div class="k">${pc(D.cross,D.n)}%</div><div class="kl">changed whether the feature gets tested (${D.cross} of ${D.n})</div></div>`;
+h+=`<div class="card c12" id="b1"><h2>Lowered or raised</h2><p class="n">Click to see every correction.</p><div class="bar"><div style="flex:${D.down};background:var(--down)">${D.down} lowered</div><div style="flex:${D.up};background:var(--up)">${D.up} raised</div></div></div>`;
+const mx=Math.max(...D.order.map(k=>D.rel[k][0]+D.rel[k][1]));
+h+=`<div class="card c6"><h2>By release</h2><p class="n">Red: lowered. Blue: raised. Click a bar.</p><div class="rel">`+D.order.map(k=>{const[d,u]=D.rel[k],t=d+u;return `<div class="rc" data-r="${k}"><div class="s" style="height:${200*u/mx}px;background:var(--up)"></div><div class="s" style="height:${200*d/mx}px;background:var(--down)"></div></div>`}).join('')+`</div><div class="lab">`+D.order.map(k=>`<div>${k}</div>`).join('')+`</div><p class="n" style="margin-top:8px">Releases 21R3 to 25R2 do not publish old and new ratings, so they are not shown.</p></div>`;
+const sk=Object.keys(D.sec).sort((a,b)=>D.sec[b][0]+D.sec[b][1]-D.sec[a][0]-D.sec[a][1]),sm=Math.max(...sk.map(k=>D.sec[k][0]));
+h+=`<div class="card c6"><h2>By Veeva section</h2><p class="n">Lowered (left) and raised (right). Click a bar.</p>`+sk.map(k=>`<div class="row"><div>${k}</div><div class="l"><div class="seg" data-s="${k}" data-d="down" style="width:${100*D.sec[k][0]/sm}%;background:var(--down)"></div></div><div><div class="seg" data-s="${k}" data-d="up" style="width:${100*D.sec[k][1]/sm}%;background:var(--up)"></div></div></div>`).join('')+`<p class="n">Shows ${D.n-D.unm} of ${D.n} corrections. ${D.unm} could not be placed in a section.</p></div>`;
+const L=['High','Medium','Low','N/A'],cmax=Math.max(...L.flatMap(f=>L.map(t=>D.mat[f][t])));
+h+=`<div class="card c12"><h2>Where ratings move</h2><p class="n">Old rating (rows) to new rating (columns). Click a cell.</p><div class="mx"><b></b>`+L.map(t=>`<b>to ${t}</b>`).join('')+L.map(f=>`<b style="text-align:right;padding-top:12px">from ${f}</b>`+L.map(t=>{const v=D.mat[f][t],lo=L.indexOf(t)>L.indexOf(f),c=lo?'208,59,59':'42,120,214';return f===t?`<div></div>`:`<div class="mc" data-f="${f}" data-t="${t}" style="background:rgba(${c},${v?0.15+0.7*v/cmax:0.04});">${v}</div>`}).join('')).join('')+`</div></div>`;
+$('#g').innerHTML=h;
+const eL=pc(...D.early),lL=pc(...D.late);
+$('#ft').innerHTML=`Counts: ${D.early[0]} of ${D.early[1]} corrections lowered in 2019 to 2021, ${D.late[0]} of ${D.late[1]} in 2025 to 2026. Source: 23 public Veeva Vault release impact assessments, 2019 to 2026. Only releases 19R1 to 21R2 and 25R3 to 26R2 publish old and new ratings.`;
+$('#k1').onclick=$('#b1').onclick=()=>show('All corrections','Every rating Veeva changed after publishing, with old and new rating.',R);
+$('#k2').onclick=()=>show('Lowered ratings',`${D.down} corrections lowered the rating.`,by(r=>r.dir==='down'));
+$('#k3').onclick=()=>show('Changed the testing decision',`${D.off} lowered a rating from Medium or High to Low or N/A, so testing is switched off. ${D.on} raised it, so testing is switched on.`,by(r=>r.cross));
+document.querySelectorAll('.rc').forEach(e=>e.onclick=()=>show('Release '+e.dataset.r,'Corrections Veeva made to this release.',by(r=>r.release===e.dataset.r)));
+document.querySelectorAll('.seg').forEach(e=>e.onclick=()=>show(e.dataset.s+(e.dataset.d==='down'?': lowered':': raised'),'',by(r=>r.section===e.dataset.s&&r.dir===e.dataset.d)));
+document.querySelectorAll('.mc').forEach(e=>e.onclick=()=>show(`From ${e.dataset.f} to ${e.dataset.t}`,'',by(r=>r.frm===e.dataset.f&&r.to===e.dataset.t)));
+</script></body></html>
