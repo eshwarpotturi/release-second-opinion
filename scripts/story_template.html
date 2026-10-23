@@ -14,15 +14,16 @@ button.t{font:inherit;font-size:18px;background:var(--card);color:var(--ink);bor
 h2{font-size:26px;margin:0 0 4px}.n{font-size:18px;color:var(--ink2);margin:0 0 10px}
 .k{font-size:68px;font-weight:700;line-height:1}.kl{font-size:20px;color:var(--ink2);margin-top:6px}
 .kc{display:flex;flex-direction:column;justify-content:space-between}
-.sq{display:grid;grid-template-columns:repeat(50,1fr);gap:3px}.sq i{aspect-ratio:1;background:var(--same);border-radius:2px;display:block}
-.sq i.off{background:var(--down)}.sq i.lower{background:var(--downl)}.sq i.on{background:var(--up)}.sq i.raise{background:var(--upl)}
-.leg{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:12px;font-size:19px}.leg span{cursor:pointer;display:flex;align-items:center;gap:8px}
-.leg b{width:18px;height:18px;border-radius:3px;display:inline-block}
-.row{display:grid;grid-template-columns:210px 1fr 70px;gap:10px;align-items:center;margin:9px 0;font-size:21px}
-.tr{display:flex;height:30px;background:transparent}.seg{height:30px;cursor:pointer}.seg:hover{opacity:.8}
-.rel{display:flex;align-items:flex-end;gap:5px;height:190px;border-bottom:2px solid var(--line)}
-.rc{flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:100%;cursor:pointer}.rc:hover{opacity:.8}
-.lab{display:flex;gap:5px;margin-top:4px;font-size:13px;color:var(--ink2);overflow:hidden}.lab div{flex:1;text-align:center;writing-mode:vertical-rl;transform:rotate(180deg);height:46px}
+.sq{display:grid;grid-template-columns:repeat(71,1fr);gap:2px}.sq i{aspect-ratio:1;background:var(--same);border-radius:2px;display:block;cursor:pointer}
+.sq i.down{background:var(--down)}.sq i.up{background:var(--up)}.sq i:hover{outline:3px solid var(--ink);outline-offset:1px;position:relative;z-index:1}
+.leg{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:12px;font-size:20px}.leg span{display:flex;align-items:center;gap:8px}
+.leg b{width:20px;height:20px;border-radius:3px;display:inline-block}
+.row{display:grid;grid-template-columns:230px 1fr 190px;gap:12px;align-items:center;margin:10px 0;font-size:22px}
+.tr{display:flex;height:38px;background:var(--same);border-radius:4px;overflow:hidden}.seg{height:38px;cursor:pointer;color:#fff;font-weight:700;font-size:20px;display:flex;align-items:center;justify-content:center}.seg:hover{opacity:.8}
+.cnt{font-size:19px;color:var(--ink2)}
+.mv{display:grid;grid-template-columns:1fr auto auto;gap:6px 14px;align-items:center;font-size:22px}
+.mv .m{display:contents;cursor:pointer}.mv .m>*{padding:7px 4px;border-bottom:1px solid var(--line)}.mv .m:hover>*{background:var(--bg)}
+.mv .a{font-weight:650}.mv .c{font-weight:700;text-align:right}
 .era{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.era div{background:var(--bg);border-radius:8px;padding:10px 14px}.era .v{font-size:40px;font-weight:700}.era .y{font-size:18px;color:var(--ink2)}
 .msg{font-size:28px;font-weight:650;padding:14px 22px;border-left:8px solid var(--up);background:var(--card);border-radius:0 12px 12px 0;margin-bottom:16px}
 #m{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;z-index:9}
@@ -32,16 +33,15 @@ table{border-collapse:collapse;width:100%;font-size:18px}td,th{border-bottom:1px
 .dn{color:var(--down);font-weight:650}.upc{color:var(--up);font-weight:650}
 footer{font-size:16px;color:var(--ink2);margin-top:6px;line-height:1.5}
 </style></head><body>
-<header><div><h1>Veeva rarely changes its mind. When it does, it usually lowers the risk.</h1><p class="sub">Every rating change in Veeva's own change logs, 23 releases, 2019 to 2026. Click any block to see the features.</p></div><button class="t" id="th">Dark mode</button></header>
+<header><div><h1>Veeva rarely changes its mind. When it does, it usually lowers the risk.</h1><p class="sub">Every rating change in Veeva's own change logs, 23 releases, 2019 to 2026. Click any square or bar to see the features.</p></div><button class="t" id="th">Dark mode</button></header>
 <div class="grid">
-<div class="card c8"><h2>Take 1,000 Veeva features</h2><p class="n" id="hn"></p><div class="sq" id="sq"></div><div class="leg" id="lg"></div></div>
+<div class="card c8"><h2>Every Veeva feature in the 11 releases that publish old and new ratings</h2><p class="n" id="hn"></p><div class="sq" id="sq"></div><div class="leg" id="lg"></div></div>
 <div class="c4" style="display:grid;gap:16px;grid-template-rows:repeat(3,1fr)" id="kp"></div>
 </div>
 <div class="msg" id="msg"></div>
 <div class="grid">
-<div class="card c4"><h2>Which ratings change most</h2><p class="n">Share of features first rated this way that were revised.</p><div id="tiers"></div></div>
-<div class="card c4"><h2>By Veeva section</h2><p class="n">Revisions per 100 features. Red: lowered. Blue: raised. Grey: old rating not published.</p><div id="secs"></div></div>
-<div class="card c4"><h2>By release</h2><p class="n">Revisions in each release, same colours.</p><div class="rel" id="rel"></div><div class="lab" id="rl"></div></div>
+<div class="card c8"><h2>By Veeva section: lowered or raised?</h2><p class="n" id="sn"></p><div id="secs"></div><div class="leg"><span><b style="background:var(--down)"></b>Rating lowered</span><span><b style="background:var(--up)"></b>Rating raised</span></div></div>
+<div class="card c4"><h2>The most common changes</h2><p class="n">Old rating to new rating. Click a row to see the features.</p><div class="mv" id="mv"></div></div>
 </div>
 <div class="card c12" style="margin-bottom:10px"><h2>The overall bar does not move</h2><p class="n">Share of all features Veeva rates High. Revisions happen one feature at a time, not as a shift in the whole scale.</p><div class="era" id="era"></div></div>
 <footer id="ft"></footer>
@@ -55,35 +55,32 @@ const cl=()=>{$('#m').style.display='none'};$('#m').onclick=e=>{if(e.target.id==
 const I=D.items,fmt=n=>n.toLocaleString('en-GB');
 function tbl(rs){return '<table><tr><th>Release</th><th>Feature</th><th>Rating change</th><th>Section</th></tr>'+rs.map(r=>`<tr><td>${r.release}</td><td>${r.feature}${r.desc?`<div style="font-size:15px;color:var(--ink2)">${r.desc}</div>`:''}</td><td class="${r.dir==='down'?'dn':r.dir==='up'?'upc':''}">${r.first?`${r.first} → ${r.now}${r.cross?' ⚑':''}`:`now ${r.now||'not known'} (old rating not published)`}</td><td>${r.section||'Not known'}</td></tr>`).join('')+'</table><p style="font-size:16px">⚑ changes whether the feature is tested (Medium and High are tested).</p>'}
 function show(t,p,rs){$('#mb').innerHTML=`<h2>${t}</h2><p>${p} ${rs.length} feature${rs.length==1?'':'s'}.</p>`+tbl(rs);$('#m').style.display='flex'}
-const cat=r=>!r.vis?null:(r.dir==='down'?(r.cross?'off':'lower'):(r.cross?'on':'raise'));
-const H=D.hero,N=D.Nvis,per=k=>Math.round(1000*(H[k]||0)/N);
-const q={off:per('off'),lower:per('lower'),on:per('on'),raise:per('raise')};q.same=1000-q.off-q.lower-q.on-q.raise;
+const H=D.hero,N=D.Nvis,SQ=D.squares,rev=H.off+H.lower+H.on+H.raise,nd=H.off+H.lower,nu=H.on+H.raise;
+const one=s=>{const it=s[4]>=0?I[s[4]]:null;let h=`<h2>${s[2]}</h2><p>Veeva ${s[0]} · ${s[1]||'Section not known'}</p>`;
+ if(it){h+=`<p class="${it.dir==='down'?'dn':'upc'}" style="font-size:26px">First rated ${it.first}. Now rated ${it.now}. Veeva ${it.dir==='down'?'lowered':'raised'} the rating.</p><p>${it.cross?'This changes whether the feature is tested.':'This does not change whether the feature is tested.'}</p>${it.desc?`<p style="color:var(--ink2)">${it.desc}</p>`:''}`}
+ else h+=`<p style="font-size:26px">Rated ${s[3]}. Veeva did not revise this rating.</p>`;
+ $('#mb').innerHTML=h;$('#m').style.display='flex'};
 let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
-const arr=[];['off','lower','on','raise'].forEach(k=>{for(let i=0;i<q[k];i++)arr.push(k)});while(arr.length<1000)arr.push('same');
-for(let i=999;i>0;i--){const j=Math.floor(rnd()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]]}
-$('#sq').innerHTML=arr.map(k=>`<i class="${k}" data-c="${k}"></i>`).join('');
-const names={off:['Rating lowered, testing switched off','var(--down)'],lower:['Rating lowered, testing unchanged','var(--downl)'],on:['Rating raised, testing switched on','var(--up)'],raise:['Rating raised, testing unchanged','var(--upl)'],same:['Not revised','var(--same)']};
-$('#lg').innerHTML=['off','lower','on','raise','same'].map(k=>`<span data-c="${k}"><b style="background:${names[k][1]}"></b>${names[k][0]}: ${q[k]}</span>`).join('');
-const rev=D.hero.off+D.hero.lower+D.hero.on+D.hero.raise;
-$('#hn').textContent=`${1000-q.same} were revised after publishing, ${q.off+q.lower} of them downwards. Based on ${fmt(N)} features in the 11 releases that publish old and new ratings.`;
-document.querySelectorAll('[data-c]').forEach(e=>e.onclick=()=>{const c=e.dataset.c;if(c==='same')return;show(names[c][0],'Features in this group.',I.filter(r=>cat(r)===c))});
+const ord=SQ.map((_,i)=>i);for(let i=ord.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[ord[i],ord[j]]=[ord[j],ord[i]]}
+$('#sq').innerHTML=ord.map(i=>{const it=SQ[i][4]>=0?I[SQ[i][4]]:null;return `<i class="${it?it.dir:''}" data-i="${i}"${it?` title="${SQ[i][2].replace(/"/g,'&quot;')}"`:''}></i>`}).join('');
+$('#sq').onclick=e=>{const el=e.target.closest('i');if(el)one(SQ[+el.dataset.i])};
+$('#lg').innerHTML=`<span><b style="background:var(--same)"></b>Not revised: ${fmt(N-rev)}</span><span><b style="background:var(--down)"></b>Rating lowered: ${nd}</span><span><b style="background:var(--up)"></b>Rating raised: ${nu}</span>`;
+$('#hn').textContent=`Each square is one feature (${fmt(N)}). ${rev} were revised after publishing, ${nd} of them downwards. Click a square to see that feature.`;
 const kp=[[`${(100*rev/N).toFixed(1)}%`,`of ratings were revised after publishing (${rev} of ${fmt(N)})`,'var(--ink)',()=>show('All revisions with old and new rating','',I.filter(r=>r.vis))],
 [`${Math.round(100*D.n_down/D.n_rows)}%`,`of revisions lowered the risk (${D.n_down} of ${D.n_rows}, every case where the old and new rating are published)`,'var(--down)',()=>show('Lowered ratings','',I.filter(r=>r.dir==='down'))],
 [`${(100*(H.off+H.on)/N).toFixed(1)}%`,`changed whether a feature is tested: ${H.off} switched off, ${H.on} switched on`,'var(--ink)',()=>show('Changed the testing decision','',I.filter(r=>r.vis&&r.cross))]];
 $('#kp').innerHTML=kp.map((k,i)=>`<div class="card click kc" id="kp${i}"><div class="k" style="color:${k[2]}">${k[0]}</div><div class="kl">${k[1]}</div></div>`).join('');
 kp.forEach((k,i)=>$('#kp'+i).onclick=k[3]);
 $('#msg').textContent=`Plan testing from the first list, then read the change log: of ${fmt(N)} features it would over-test ${H.off} and miss ${H.on}.`;
-const tk=['High','Medium','Low','N/A'],tm=Math.max(...tk.map(k=>D.tiers[k].revised/D.tiers[k].n));
-$('#tiers').innerHTML=tk.map(k=>{const t=D.tiers[k];return `<div class="row"><div>First rated ${k}</div><div class="tr"><div class="seg" data-t="${k}" style="width:${100*(t.revised/t.n)/tm}%;background:${k==='Low'?'var(--down)':'var(--unk)'}"></div></div><div>${(100*t.revised/t.n).toFixed(1)}%</div></div>`}).join('')+`<p class="n">Most common move: Low to N/A (${D.pairs[0][2]} times). Both sit below the testing line, so testing does not change.</p>`;
-document.querySelectorAll('[data-t]').forEach(e=>e.onclick=()=>show('First rated '+e.dataset.t,'Revised after publishing.',I.filter(r=>r.vis&&r.first===e.dataset.t)));
-const sk=Object.keys(D.secs).sort((a,b)=>D.secs[b].revised/D.secs[b].features-D.secs[a].revised/D.secs[a].features),sm=Math.max(...sk.map(k=>D.secs[k].revised/D.secs[k].features));
-$('#secs').innerHTML=sk.map(k=>{const s=D.secs[k],w=x=>100*(x/s.features)/sm;return `<div class="row" style="grid-template-columns:120px 1fr 52px;font-size:18px"><div>${k.replace('eConsent, eCOA and Sites','eConsent and Sites')}</div><div class="tr">${[['down','var(--down)'],['up','var(--up)'],['unknown','var(--unk)']].map(([d,c])=>`<div class="seg" data-s="${k}" data-d="${d}" style="width:${w(s[d])}%;background:${c}"></div>`).join('')}</div><div>${(100*s.revised/s.features).toFixed(1)}</div></div>`}).join('');
-document.querySelectorAll('[data-s]').forEach(e=>e.onclick=()=>show(e.dataset.s,{down:'Lowered.',up:'Raised.',unknown:'Old rating not published.'}[e.dataset.d],I.filter(r=>r.section===e.dataset.s&&r.dir===e.dataset.d)));
-const rl=Object.keys(D.rel),rm=Math.max(...rl.map(k=>D.rel[k].down+D.rel[k].up+D.rel[k].unknown));
-$('#rel').innerHTML=rl.map(k=>{const r=D.rel[k],h=x=>180*x/rm;return `<div class="rc" data-r="${k}"><div style="height:${h(r.unknown)}px;background:var(--unk)"></div><div style="height:${h(r.up)}px;background:var(--up)"></div><div style="height:${h(r.down)}px;background:var(--down)"></div></div>`}).join('');
-$('#rl').innerHTML=rl.map(k=>`<div>${k}</div>`).join('');
-document.querySelectorAll('[data-r]').forEach(e=>e.onclick=()=>show('Release '+e.dataset.r,'Revisions in this release.',I.filter(r=>r.release===e.dataset.r)));
+const sk=Object.keys(D.secs).filter(k=>D.secs[k].down+D.secs[k].up>0).sort((a,b)=>{const x=D.secs[a],y=D.secs[b];return y.down/(y.down+y.up)-x.down/(x.down+x.up)||(y.down+y.up)-(x.down+x.up)});
+$('#secs').innerHTML=sk.map(k=>{const s=D.secs[k],n=s.down+s.up;return `<div class="row"><div>${k.replace('eConsent, eCOA and Sites','eConsent and Sites')}</div><div class="tr">${[['down','var(--down)'],['up','var(--up)']].map(([d,c])=>s[d]?`<div class="seg" data-s="${k}" data-d="${d}" style="width:${100*s[d]/n}%;background:${c}">${s[d]}</div>`:'').join('')}</div><div class="cnt">${s.down} of ${n} lowered</div></div>`}).join('');
+document.querySelectorAll('[data-s]').forEach(e=>e.onclick=()=>show(e.dataset.s,{down:'Revisions that lowered the rating.',up:'Revisions that raised the rating.'}[e.dataset.d],I.filter(r=>r.section===e.dataset.s&&r.dir===e.dataset.d)));
+const allRed=sk.filter(k=>D.secs[k].up===0&&D.secs[k].down>=3).map(k=>k.replace('eConsent, eCOA and Sites','eConsent and Sites')),big=sk.filter(k=>D.secs[k].down+D.secs[k].up>=10).sort((a,b)=>D.secs[b].up/(D.secs[b].down+D.secs[b].up)-D.secs[a].up/(D.secs[a].down+D.secs[a].up))[0],bs=D.secs[big];
+$('#sn').textContent=`Only revisions with a published old and new rating. ${allRed.join(' and ')}: every revision lowered the rating. ${big}: the highest share raised among the larger sections (${bs.up} of ${bs.down+bs.up}). Counts are small, so read them as a guide. Click a bar to see the features.`;
+const O={'N/A':0,'Low':1,'Medium':2,'High':3};
+$('#mv').innerHTML=D.pairs.slice(0,7).map(([a,b,c])=>{const dn=O[b]<O[a],fl=(O[a]>=2)!==(O[b]>=2);return `<div class="m" data-a="${a}" data-b="${b}"><div class="a">${a} to ${b}${fl?' ⚑':''}</div><div class="c">${c}</div><div class="${dn?'dn':'upc'}">${dn?'lowered':'raised'}</div></div>`}).join('')+`<p class="n" style="grid-column:1/-1;margin:8px 0 0">⚑ changes whether the feature is tested (Medium and High are tested).</p>`;
+document.querySelectorAll('[data-a]').forEach(e=>e.onclick=()=>show(e.dataset.a+' to '+e.dataset.b,'Revisions with this change.',I.filter(r=>r.first===e.dataset.a&&r.now===e.dataset.b)));
 const ey=['2019–2021','2022','2023–2024','2025–2026'];
 $('#era').innerHTML=ey.map(k=>{const e=D.era[k],t=e.High+e.Medium+e.Low+e['N/A'];return `<div><div class="v">${(100*e.High/t).toFixed(1)}%</div><div class="y">rated High, ${k}</div></div>`}).join('');
-$('#ft').innerHTML=`Source: ${D.total_features.toLocaleString('en-GB')} features in 23 public Veeva Vault release impact assessments and their change logs. Old and new ratings are published only for 19R1 to 21R2 and 25R3 to 26R2 (${D.n_rows} revisions); ${D.n_names} more revisions in 21R3 to 25R2 are listed by name only, shown in grey. Sections: Veeva's own groupings, shown where the feature could be placed. Medium and High ratings are tested; Low and N/A are not.`;
+$('#ft').innerHTML=`Source: ${D.total_features.toLocaleString('en-GB')} features in 23 public Veeva Vault release impact assessments and their change logs. Old and new ratings are published only for 19R1 to 21R2 and 25R3 to 26R2 (${D.n_rows} revisions); ${D.n_names} more revisions in 21R3 to 25R2 are listed by name only, so their direction is not known and they are left out of the bars and squares by direction. Sections: Veeva's own groupings, shown where the feature could be placed. Medium and High ratings are tested; Low and N/A are not. The grid shows the ${rev} revised features found in the final lists; ${D.n_rows-rev} more revisions are for features no longer listed and are counted in the bars and the list. Section bars use the ${Object.values(D.secs).reduce((x,s)=>x+s.down+s.up,0)} of ${D.n_rows} revisions with a published direction that could be placed in a section.`;
 </script></body></html>
