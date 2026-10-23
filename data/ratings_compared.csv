@@ -1,0 +1,540 @@
+release,section,application,feature,veeva,gpt41,gpt51,enablement,default_impact
+19R1,Clinical Operations,Clinical Data Exchange,Clinical Data Exchange,High,High,High,Support,None
+19R1,Clinical Operations,Clinical Data Exchange,Clinical Data Exchange ID & Cross-Vault Mapping,High,High,High,Support,None
+19R1,Clinical Operations,CTMS,Monitoring Reviewer Comments,High,Medium,Medium,Auto-on,Visible to All Users
+19R1,Clinical Operations,CTMS,Homepage Enrollment Status Graph Enhancements,Low,Low,Medium,Auto-on,Visible to All Users
+19R1,Clinical Operations,CTMS,Vault Payments: Fee Schedule,Medium,Medium,Medium,Support,None
+19R1,Clinical Operations,"CTMS, eTMF, Study Startup",Milestone/EDL Creation Job Runs as System,N/A,High,High,Auto-on,Visible to All Users
+19R1,Clinical Operations,RIM Submissions Archive,Exclude Correspondence from Bulk Export,Medium,Low,Medium,Admin Checkbox,Visible to Admins Only
+19R1,Clinical Operations,RIM Submissions Archive,Bulk Submission Export Job Enhancements,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R1,Clinical Operations,RIM Submissions Archive,Jordan (JO) 1.0 DTD Support,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R1,Clinical Operations,RIM Submissions Archive,Swiss (CH) 1.4 DTD Support,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R1,Quality,QMS,Record-Level Locking for Quality,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R1,Quality,QMS,Quality Teams,Medium,Medium,Medium,Support,None
+19R1,Quality,"QMS, QualityDocs, Station Manager",Vault Quality Station Manager Client Permissions,N/A,High,Medium,Support,None
+19R1,Quality,Platform,Vault Configuration Report Enhancements,Medium,Medium,Medium,Auto-on,Visible to Admins Only
+19R1,Quality,Platform,Vault Loader Load Usability Enhancements,Medium,Medium,Medium,Auto-on,Visible to Admins Only
+19R1,Quality,Platform,Workflow Configuration Version History in Document Workflow Admin,Medium,Medium,Medium,Auto-on,Visible to Admins Only
+19R1,Quality,Platform,Allow Short Circuit in Document Workflow for Non-Cancellable Tasks,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R1,Quality,Platform,Auto-Start Object Workflow,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R1,Quality,Platform,Conditional Overlays,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R1,Quality,Platform,Event Actions on Document Lifecycles,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R1,Quality,Platform,Event Actions on Object Lifecycles,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R1,Quality,Platform,Layout Rules,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R1,Quality,Platform,Persist Formula Formatting,Low,Low,Low,Auto-on,Visible to Admins Only
+19R1,Quality,Platform,Spark Messaging,Low,High,High,Auto-on,Visible to Admins Only
+19R1,Quality,Platform,Copy Link to Document and Page,Low,Low,Low,Admin Checkbox,Visible to Admins Only
+19R1,Quality,Platform,Checklist Design Export to Flattened CSV,Low,Medium,Medium,Configuration,Visible to Admins Only
+19R1,Quality,Platform,Formatted Output Tokens for User & Timestamp,Low,Medium,Medium,Configuration,Visible to Admins Only
+19R1,Quality,Platform,Formula Support for Picklist Field Default,Low,Medium,Medium,Configuration,Visible to Admins Only
+19R1,Quality,Platform,Create Object Records in Non-Initial State,N/A,Medium,High,Auto-on,Visible to Admins Only
+19R1,Quality,Platform,Document Type Admin Displays Name,N/A,N/A,N/A,Auto-on,Visible to Admins Only
+19R1,Quality,Platform,Limit for Picklist Items,N/A,Low,Low,Auto-on,Visible to Admins Only
+19R1,Quality,Platform,Enable Asynchronous Binder Export,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R1,Quality,Platform,HTTP Callout,N/A,High,High,Auto-on,None
+19R1,Quality,Platform,Salesforce Delegated Auth Supports URLs Without Salesforce Instance Names,N/A,Medium,High,Auto-on,None
+19R1,Quality,Platform,Vault Loader Support for 50k VQL Limit,N/A,Medium,Medium,Auto-on,None
+19R2,Clinical Operations,CTMS,Proactive Subject Visit Seeding,High,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Clinical Operations,CTMS,Custom Monitoring Event Milestone Automation,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Clinical Operations,CTMS,Seeding Follow-Up Items on Monitoring Events,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Clinical Operations,CTMS,Subject Recruitment Planning,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Clinical Operations,CTMS,Vault Payments: Fee Schedule Template,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Clinical Operations,CTMS,Automatically Seed Metrics,Low,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Clinical Operations,CTMS,Configurable Metric Usage,Low,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Clinical Operations,CTMS,Monitoring Event Object Compliance,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R2,Clinical Operations,"CTMS, eTMF, Study Startup",Incorporation of Clinical User Tasks into Existing Milestone Features,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Clinical Operations,"CTMS, eTMF, Study Startup",Clinical EDL Template Refactor,Medium,Medium,Medium,Support,Visible to Admins Only
+19R2,Clinical Operations,"CTMS, eTMF, Study Startup",Person & Organization Migration,High,Medium,Medium,Support,None
+19R2,Clinical Operations,"CTMS, eTMF, Study Startup",Clinical Version-Aware EDLs,N/A,Medium,Medium,Support,None
+19R2,Clinical Operations,eTMF,New TMF Viewer,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Clinical Operations,eTMF,Disable Send as Link for Restricted Documents,Low,High,High,Admin Checkbox,Visible to Admins Only
+19R2,Clinical Operations,eTMF,Veeva Clinical Network for CRO to Sponsor Transfer,High,High,High,Support,None
+19R2,SiteVault,SiteDocs,SiteDocs Data Model Changes,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+19R2,SiteVault,SiteDocs,Study eBinder Enhancements,Low,Medium,Medium,Auto-on,Visible to All Users
+19R2,Commercial & Medical,"MedComms, PromoMats",Back to Vault from Brand/Medical Portal,Low,N/A,Medium,Auto-on,Visible to All Users
+19R2,Commercial & Medical,PromoMats,Compliance Package Generation Improvements: Enforce Documents are in a Steady State Check,High,Medium,Medium,Admin Checkbox,Visible to Admins Only
+19R2,Commercial & Medical,PromoMats,Set Binder Content Version Binding to Steady State Entry Action,Low,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Regulatory,RIM Publishing,Prevent State Change When Outstanding Publishing Items Exist,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Regulatory,RIM Publishing,Unreferenced Files in Submissions Publishing,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Regulatory,RIM Publishing,Open Content Plan Item from Submissions Archive,Low,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Regulatory,RIM Registrations,XEVMPD Gateway Submission: Supporting Data Model & Configuration,Low,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Regulatory,"RIM Registrations, RIM Submissions, RIM Submissions Archive",Action Level Security for Additional Regulatory Actions,Medium,High,High,Configuration,Visible to Admins Only
+19R2,Regulatory,"RIM Registrations, RIM Submissions, RIM Submissions Archive",Medical Device Data Model,Low,Medium,Medium,Auto-on,Visible to Admins Only
+19R2,Regulatory,RIM Submissions,Report Level Content Plan for Product Family Reports,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Regulatory,RIM Submissions,Content Plan Item Manual Matching on Create Placeholder & Upload Document Actions,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R2,Regulatory,RIM Submissions,Show Inactive Records in Content Plan Viewer,Low,Low,Medium,Auto-on,Visible to All Users
+19R2,Regulatory,RIM Submissions,Content Plan Usability Enhancements,N/A,Low,Low,Auto-on,Visible to All Users
+19R2,Regulatory,RIM Submissions Archive,Simplified Import: Dossier Formats,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Regulatory,RIM Submissions Archive,Real-time Correspondence in Viewer,Low,Medium,Medium,Auto-on,Visible to Admins Only
+19R2,Regulatory,RIM Submissions Archive,Show eCTD Metadata Mapping on Submission Import,Low,Low,Medium,Admin Checkbox,Visible to Admins Only
+19R2,Regulatory,RIM Submissions Archive,China (CN) 1.0 XSD Support,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R2,Regulatory,RIM Submissions Archive,Submission Import from User FTP,Medium,High,High,Configuration,None
+19R2,Quality,QMS,Quality Teams: Power Delete Team Memberships Record Action,High,High,Medium,Configuration,Visible to Admins Only
+19R2,Quality,QMS,Risk Management in QMS,Medium,High,Medium,Configuration,Visible to Admins Only
+19R2,Quality,QMS,Quality Teams: Administration & General Availability,Low,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Quality,QualityDocs,Mandatory Approvers for Document Change Control,High,Medium,Medium,Support,None
+19R2,Quality,QualityOne,QualityOne Station Manager,Medium,High,High,Support,None
+19R2,Quality,QualityOne,QualityOne Training Management,Medium,High,High,Support,None
+19R2,Mobile,Station Manager,Android Station Manager Enhancements,Low,Medium,Medium,Support,None
+19R2,Platform,Platform,Management of Signing Certificates for SAML & Spark,High,High,High,Configuration,Visible to Admins Only
+19R2,Platform,Platform,Object Field Encryption,High,High,High,Configuration,Visible to Admins Only
+19R2,Platform,Platform,Dataset Configuration Migration Enhancements,Medium,Medium,High,Auto-on,Visible to Admins Only
+19R2,Platform,Platform,Vault Compare Enhancements,Medium,Medium,Medium,Auto-on,Visible to Admins Only
+19R2,Platform,Platform,Dependent Picklists for Objects,Medium,Low,Medium,Configuration,Visible to Admins Only
+19R2,Platform,Platform,Filtering on Related Object Sections,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Platform,Platform,Lifecycle Stages,Medium,Medium,Low,Configuration,Visible to Admins Only
+19R2,Platform,Platform,Merge Fields for Excel,Medium,Low,Medium,Configuration,Visible to Admins Only
+19R2,Platform,Platform,Multi-Document Workflow: Enhanced Support for Document Fields,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R2,Platform,Platform,Multi-Document Workflow: Prompt for Fields on Start Step & Task Step,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R3,Clinical Operations,CTMS,Date-Based Monitored Subjects & Enrollment Status Logs,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R3,Clinical Operations,CTMS,Subject Recruitment Planning Enhancements,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R3,Clinical Operations,CTMS,Surfacing Monitoring Reviewer Comments Resolved By,Low,Medium,Medium,Auto-on,Visible to All Users
+19R3,Clinical Operations,CTMS,Standard Monitoring Event Approval Complete Date,N/A,Medium,Medium,Auto-on,Visible to All Users
+19R3,Clinical Operations,"CTMS, eTMF, Study Startup",Promote Person to User,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R3,Clinical Operations,"CTMS, eTMF, Study Startup",Person & Organization Migration,High,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,QMS,Quality Teams: Cancel Role-Assigned Task When User is Removed from Role,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,QMS,QMS Spark Connection: Change Control & Variation Management,Medium,High,High,Support,None
+19R3,Quality,Training,Copy Custom Fields,High,Medium,High,Configuration,Visible to Admins Only
+19R3,Quality,Training,Instructor-Led Training,High,Medium,Medium,Configuration,Visible to Admins Only
+19R3,Quality,Training,Training Requirement Recurrence Enhancement,High,Medium,Medium,Configuration,Visible to Admins Only
+19R3,Quality,Training,Data Model Changes for Training Assignment Checklist Lifecycle,Medium,Medium,Medium,Auto-on,Visible to Admins Only
+19R3,Quality,Training,Job Logging,Low,Medium,Medium,Auto-on,Visible to Admins Only
+19R3,Quality,Training,Learner Task Page for Document Training Assignments,High,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,Training,Multi-Document Training,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,"RIM Publishing, RIM Registrations, RIM Submissions, RIM Submissions Archive",Allow Multi-Select on Standard Document Fields,N/A,Medium,Medium,Support,None
+19R3,Quality,"RIM Publishing, RIM Submissions",Validation Results Archiving,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,"RIM Publishing, RIM Submissions Archive, RIM Submissions",Regulatory Buttons & Breadcrumbs,N/A,N/A,Medium,Auto-on,Visible to All Users
+19R3,Quality,RIM Registrations,XEVMPD Gateway Submission,High,High,High,Configuration,Visible to Admins Only
+19R3,Quality,RIM Registrations,Bundle Regulatory Objectives,Medium,Medium,Medium,Configuration,Visible to Admins Only
+19R3,Quality,RIM Registrations,Dynamic Labels in Impact Assessment Report Prompt,Medium,Low,N/A,Auto-on,Visible to All Users
+19R3,Quality,RIM Registrations,Enhancements to Create Registrations Wizard,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,RIM Registrations,Registrations Spark Connection: Change Control & Variation,Medium,Medium,High,Support,None
+19R3,Quality,Platform,Block Use of System- Managed Name in Validation Rule,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+19R3,Quality,Platform,Increase Formula Field Limit for Objects,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+19R3,Quality,Platform,Java SDK Message Catalog: Admin UI,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+19R3,Quality,Platform,Spark Message Processor Label Clarification,N/A,N/A,N/A,Auto-on,Visible to Admins Only
+19R3,Quality,Platform,UI Changes in Object Page Layout Editor,N/A,N/A,N/A,Auto-on,Visible to Admins Only
+19R3,Quality,Platform,Spark User Exceptions,N/A,Medium,Medium,Configuration,Visible to Admins Only
+19R3,Quality,Platform,Enhanced Delegate Access Experience,High,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,Platform,System Objects Supported in Related Record Audit Trails,High,High,High,Auto-on,Visible to All Users
+19R3,Quality,Platform,Create Anchors,Medium,Medium,Low,Auto-on,Visible to All Users
+19R3,Quality,Platform,Global ID & Link Fields for Object Records,Medium,High,High,Auto-on,Visible to All Users
+19R3,Quality,Platform,Include Seconds in Audit Trail Export Timestamp Column,Medium,High,High,Auto-on,Visible to All Users
+19R3,Quality,Platform,Multi-Document Workflow: Remove Documents from Envelope,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,Platform,Record ID & Object Label Column in Object Audit Exports,Medium,High,High,Auto-on,Visible to All Users
+19R3,Quality,Platform,Update EDL Item Tracking Fields When Batch Update Is No/Blank,Medium,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,Platform,Display Object Reference Fields as Links in Reports,Low,Low,Low,Auto-on,Visible to All Users
+19R3,Quality,Platform,Download Notes to CSV,Low,Medium,Low,Auto-on,Visible to All Users
+19R3,Quality,Platform,Global ID & Link Fields for Documents/Versions,Low,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,Platform,Improved File Transfer for Vault File Manager,Low,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,Platform,Improved Handling for Multiple Action Bookmarks,Low,Low,N/A,Auto-on,Visible to All Users
+19R3,Quality,Platform,Pareto Charts,Low,Low,Low,Auto-on,Visible to All Users
+19R3,Quality,Platform,Task Instructions in Reports,Low,Low,Medium,Auto-on,Visible to All Users
+19R3,Quality,Platform,Remove Deprecated Re- Render Options,N/A,N/A,N/A,Auto-on,Visible to All Users
+19R3,Quality,Platform,Restrict Adding Users to Active Workflows with SDK- Managed Participants,N/A,Medium,High,Auto-on,Visible to All Users
+19R3,Quality,Platform,Simple Join Objects Include Lifecycle State Fields,N/A,Medium,Medium,Auto-on,Visible to All Users
+19R3,Quality,Platform,Document Workflow: Add Participants to Unselected Optional Tasks,Medium,Medium,Medium,Support,None
+19R3,Quality,Platform,Limited Release Sandbox,Medium,Medium,Medium,Support,None
+20R1,Clinical Operations,CTMS,Vault EDC/CTMS Connection with Spark,Medium,High,High,Configuration,Visible to Admins Only
+20R1,Clinical Operations,CTMS,Yuzu: Japanese Clinical Trial Notification Generation,Medium,Medium,High,Support,None
+20R1,Clinical Operations,"CTMS, eTMF, Study Startup, Vault Payments",Streamlined Reuse for Product/Person/Org Documents,Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R1,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Study Team Role Field Enhancements,High,Medium,Medium,Auto-on,Visible to All Users
+20R1,Clinical Operations,"CTMS, eTMF, Study Startup, Vault Payments",Clinical Operations Configuration for Object References in Advanced Search,N/A,Medium,Medium,Auto-on,Visible to All Users
+20R1,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Clinical Operations Data Model Changes,N/A,Medium,High,Auto-on,Visible to All Users
+20R1,Clinical Operations,"CTMS, eTMF, Study Startup, Vault Payments",Delay & Batch Autocomplete Job,N/A,Medium,Medium,Auto-on,Visible to All Users
+20R1,Clinical Operations,MedComms,Enhanced Configurability of Standard Fields on Select Medical Inquiry Standard Objects,Low,Medium,Medium,Auto-on,Visible to Admins Only
+20R1,Clinical Operations,MedComms,MedComms Data Model Changes,N/A,High,Medium,Auto-on,Visible to All Users
+20R1,Clinical Operations,"MedComms, Multichannel, PromoMats",New Shared Field for CLM iOS Native Resolution,Low,Low,Low,Configuration,Visible to Admins Only
+20R1,Clinical Operations,"MedComms, PromoMats",Open Portal Experience from Vault,Low,Medium,Medium,Admin Checkbox,Visible to Admins Only
+20R1,Clinical Operations,Multichannel,Update BEE Editor Support,N/A,Low,Low,N/A,Visible to All Users
+20R1,Clinical Operations,PromoMats,Auto Claims Linking: Hierarchical Copy on Claims,Low,Medium,Medium,Auto-on,Visible to All Users
+20R1,Clinical Operations,PromoMats,Auto Claims Linking: Match Text Variations,Low,Medium,Medium,Auto-on,Visible to All Users
+20R1,Clinical Operations,PromoMats,Auto Claims Linking: Prevent Move & Edit References on Approved Links,Low,Medium,Medium,Auto-on,Visible to All Users
+20R1,Clinical Operations,PromoMats,Auto Claims Linking: Remove Suggested Links,Low,Medium,Medium,Auto-on,Visible to All Users
+20R1,Quality,"Training, Station Manager, QualityDocs, QMS",Quality Data Model Changes,N/A,High,Medium,Auto-on,Visible to All Users
+20R1,Quality,QualityDocs,Auto-Recall Controlled Copies,High,Medium,Medium,Configuration,Visible to Admins Only
+20R1,Quality,QualityDocs,Display Mandatory Participants in Workflow Start Dialog,High,Low,Medium,Auto-on,Visible to All Users
+20R1,Quality,Station Manager,Station Manager: Document Categorization,Medium,Low,Medium,Configuration,Visible to Admins Only
+20R1,Quality,Station Manager,Station Manager: Additional Fields on Station Device,Low,Low,Low,Auto-on,Visible to All Users
+20R1,Quality,Training,External Training Type,High,Medium,Medium,Configuration,Visible to Admins Only
+20R1,Quality,Training,Complete Training Assignment Workflow Visible in Admin,Medium,Medium,Low,Auto-on,Visible to Admins Only
+20R1,Quality,Training,Direct Assignment to Curriculum,Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R1,Quality,Training,Manager Access to Training Records,Medium,High,Medium,Configuration,Visible to Admins Only
+20R1,Quality,Training,Direct Assignment to Multiple Learners,Medium,Medium,Medium,Auto-on,Visible to All Users
+20R1,Quality,Training,Improvements to Learner Task Page,Medium,N/A,Low,Auto-on,Visible to All Users
+20R1,Quality,Training,Training Requirement Object Type Limitation,Medium,Medium,Medium,Auto-on,Visible to All Users
+20R1,Quality,Training,Training Requirement ZIP File Limitation,Medium,Low,Medium,Auto-on,Visible to All Users
+20R1,Quality,Training,Person Object: Remove User Restrictions When Adding a Learner Role,N/A,Medium,Medium,Auto-on,Visible to All Users
+20R1,Regulatory,RIM Publishing,Australia eCTD XSD 3.1 Publishing & Validation,High,Medium,High,Configuration,Visible to Admins Only
+20R1,Regulatory,RIM Publishing,Switzerland eCTD DTD 1.4 Publishing & Validation,High,Medium,Medium,Configuration,Visible to Admins Only
+20R1,Regulatory,Platform,Enable External Users to Bring Forward Anchor Annotations,Low,Medium,Medium,Configuration,Visible to Admins Only
+20R1,Regulatory,Platform,Multi-Pass Reporting: Ladder Scenario,Low,Medium,Medium,Configuration,Visible to Admins Only
+20R1,Regulatory,Platform,Object References in Advanced Search,Low,Medium,Low,Configuration,Visible to Admins Only
+20R1,Regulatory,Platform,Run Job on Latest Steady State Version,Low,Medium,Medium,Configuration,Visible to Admins Only
+20R1,Regulatory,Platform,Deletion Rule Label Updates,N/A,N/A,N/A,Auto-on,Visible to Admins Only
+20R1,Regulatory,Platform,Expand Time Period for Login Audit Logs,N/A,High,High,Auto-on,Visible to Admins Only
+20R1,Regulatory,Platform,Spark Message Delivery Event Handler,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+20R1,Regulatory,Platform,Formatted Output: List of Attachments,N/A,Low,Medium,Configuration,Visible to Admins Only
+20R1,Regulatory,Platform,Lookup Field on Lifecycle State,N/A,Low,Medium,Configuration,Visible to Admins Only
+20R1,Regulatory,Platform,Record Workflow Action,N/A,Medium,Medium,Configuration,Visible to Admins Only
+20R2,Clinical Operations,CTMS,RBSM: Clinical Risk Assessments,Low,Medium,Medium,Configuration,Visible to Admins Only
+20R2,Clinical Operations,CTMS,Yuzu: CTN Enhancements,Medium,Medium,Medium,Support,None
+20R2,Clinical Operations,"CTMS, SiteConnect, Study Startup, Vault Payments, eTMF",Vault Clinical Docs Update,N/A,Low,Low,Auto-on,Visible to Admins Only
+20R2,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Investigator Initiated Studies in Vault Clinical Operations,Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R2,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Pre-Save Field Defaulting,Low,Low,Low,Auto-on,Visible to All Users
+20R2,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Clinical Data Model Changes,N/A,Medium,High,Auto-on,Visible to All Users
+20R2,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Organization Document Reuse Update,N/A,Medium,Medium,Auto-on,Visible to All Users
+20R2,Clinical Operations,"CTMS, Study Startup, eTMF","EDL Automation for Study Personnel, Organizations & Products",Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R2,Clinical Operations,Vault Payments,Payments: Generate Payable Items User Action,Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R2,Clinical Operations,eTMF,Rule Set Override,Medium,High,Medium,Auto-on,Visible to Admins Only
+20R2,Clinical Operations,eTMF,Simple TMF Transfer,Medium,High,High,Configuration,Visible to Admins Only
+20R2,Clinical Operations,eTMF,Archive TMF Security,Medium,High,High,Support,None
+20R2,Clinical Operations,eTMF,Archive TMF User Action & Snapshot,Medium,High,High,Support,None
+20R2,Clinical Operations,eTMF,Archive: Snapshot CrossLink Documents,Medium,High,High,Support,None
+20R2,Clinical Operations,SiteConnect,Site Connect: Site Packages,Medium,Medium,High,Support,None
+20R2,Clinical Operations,Study Startup,Milestone Evolution & Standard Metrics,Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R2,SiteVault,"SiteConnect, SiteVault Enterprise, SiteVault Free",Site Packages: SiteVault,Medium,High,High,Auto-on,Visible to All Users
+20R2,SiteVault,"SiteVault Enterprise, SiteVault Free",Easy Source Upload,N/A,Medium,Medium,Configuration,Visible to Admins Only
+20R2,SiteVault,PromoMats,Standard Metrics Fields Now Required,Low,Low,Low,Auto-on,Visible to All Users
+20R2,Quality,QMS,QRM: Process FMEA Assessment Methodology Support,Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R2,Quality,QMS,Risk Management: Detectability Support for Qualitative & Quantitative Risk Matrices,Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R2,Quality,QMS,Create Related Records: Effectiveness Checks,Low,Medium,High,Configuration,Visible to Admins Only
+20R2,Quality,QMS,Enablement Change: QMS to Registrations Spark Connection,N/A,N/A,Medium,Configuration,Visible to Admins Only
+20R2,Quality,"Training, Station Manager, QMS, QualityDocs",Quality Data Model Changes,N/A,High,Medium,Auto-on,Visible to All Users
+20R2,Quality,QualityDocs,Auto-Close Completed MDCCs,High,Medium,Medium,Configuration,Visible to Admins Only
+20R2,Quality,QualityDocs,Include Purpose for eSignatures Cascaded from MDCCs to Documents,High,High,High,Configuration,Visible to Admins Only
+20R2,Quality,RIM Submissions,Copy Content Plan Update,Medium,Medium,Medium,Auto-on,Visible to All Users
+20R2,Quality,RIM Submissions,Start Multi-Document Workflow from the Content Plan Hierarchy Viewer,Medium,Medium,Medium,Auto-on,Visible to All Users
+20R2,Quality,RIM Submissions,Expand Content Plan Section to View Descendant Records in Viewer,Low,Medium,Medium,Auto-on,Visible to All Users
+20R2,Quality,RIM Submissions,Additional Content Plan Hierarchy Viewer UI Enhancements,N/A,N/A,Low,Auto-on,Visible to All Users
+20R2,Quality,RIM Submissions,Enablement Change: Content Plan Hierarchy Viewer,N/A,Medium,Medium,Auto-on,Visible to All Users
+20R2,Quality,Platform,Separate SAML SSO Configuration for Login & eSignature,High,High,High,Configuration,Visible to Admins Only
+20R2,Quality,Platform,Document Migration Mode for Vault Loader,Medium,Medium,High,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,Inbound Component Dependency Validation,Medium,Medium,Medium,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,Updates to Object Workflow & Lifecycle Formula UI,Medium,N/A,Medium,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,Object & Multi-Document Workflows: Invoke Record Action via a System Action Step,Medium,Medium,High,Configuration,Visible to Admins Only
+20R2,Quality,Platform,Variables for Multi- Document & Object Workflows,Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R2,Quality,Platform,Document Migration Mode API Header,Low,High,High,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,Domain Users: Add Vaults in CSV Export,Low,Low,Low,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,Re-establish Vault to Vault Connections,Low,Medium,Medium,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,Spark Integration Rules UI,Low,Medium,Medium,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,VPK Deployment Order Dependency & Validation,Low,Medium,Medium,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,Default Search Context,Low,N/A,Low,Configuration,Visible to Admins Only
+20R2,Quality,Platform,Notification Preferences,Low,Low,Low,Configuration,Visible to Admins Only
+20R2,Quality,Platform,Improvements for Long Running Jobs,N/A,Low,Medium,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,Rename Permission for Mobile Applications,N/A,N/A,N/A,Auto-on,Visible to Admins Only
+20R2,Quality,Platform,"Additional Operators for Document Lifecycle State Entry Actions, User Actions & Entry Criteria",N/A,Medium,Medium,Configuration,Visible to Admins Only
+20R3,Clinical Operations,CTMS,Long-Text Trip Report Question Responses & Comments,Medium,Medium,Medium,Admin Checkbox,Visible to Admins Only
+20R3,Clinical Operations,CTMS,Displaying Instructions on Trip Report Questions,Medium,Low,Medium,Configuration,Visible to Admins Only
+20R3,Clinical Operations,CTMS,Displaying Required Responses & Comments in Trip Report Questions,Medium,Medium,Medium,Configuration,Visible to Admins Only
+20R3,Clinical Operations,CTMS,Auto-Populate Milestones from Subject Data,Low,Medium,Medium,Admin Checkbox,Visible to Admins Only
+20R3,Clinical Operations,CTMS,Additional Subject Milestones,N/A,Low,Medium,Auto-on,Visible to All Users
+20R3,Clinical Operations,CTMS,One-Click Trip Report Question Data Entry,N/A,Medium,Medium,Auto-on,Visible to All Users
+20R3,Clinical Operations,"CTMS, SiteConnect, Study Startup, Vault Payments, eTMF",Milestone Completeness Snapshot,Medium,Medium,Medium,Auto-on,Visible to All Users
+20R3,Clinical Operations,MedComms,Medical Inquiry: Cover Letter Generation Enhancements,Low,Medium,Medium,Configuration,Visible to Admins Only
+20R3,Clinical Operations,"MedComms, PromoMats",Related Portals,Low,Medium,Medium,Configuration,Visible to Admins Only
+20R3,Clinical Operations,"MedComms, PromoMats",Commercial Data Model Changes,N/A,Medium,Medium,Auto-on,Visible to All Users
+20R3,Clinical Operations,PromoMats,eCTD Compliance Package Generation,High,High,Medium,Configuration,Visible to Admins Only
+20R3,Clinical Operations,PromoMats,Configurable Standard Metrics,Low,Low,Medium,Auto-on,Visible to All Users
+20R3,Clinical Operations,PromoMats,Standard Metrics Job to Update Global Content Type to Mapped Value,N/A,Medium,Medium,Auto-on,Visible to All Users
+20R3,Quality,QMS,Audit Finding External Response Collaboration,Medium,High,High,Configuration,Visible to Admins Only
+20R3,Quality,Training,Mobile Training Task Completion,Low,Medium,Medium,Configuration,Visible to Admins Only
+20R3,Regulatory,RIM Publishing,Japan eCTD XSD 1.0 Publishing & Validation,High,Medium,High,Configuration,Visible to Admins Only
+20R3,Regulatory,RIM Publishing,Jordan eCTD DTD 1.1 Publishing & Validation,High,Medium,High,Configuration,Visible to Admins Only
+20R3,Regulatory,RIM Publishing,Support Health Canada Validation Profile v5.0,High,Medium,High,Configuration,Visible to Admins Only
+20R3,Regulatory,RIM Publishing,US FDA eCTD Specification v2.4 Support,High,Medium,Medium,Configuration,Visible to Admins Only
+20R3,Regulatory,RIM Publishing,Linking to Submissions Archive Content,Medium,Medium,High,Auto-on,Visible to All Users
+20R3,Regulatory,RIM Publishing,Update Hyperlinking Creation Logic,Medium,Medium,Medium,Auto-on,Visible to All Users
+20R3,Regulatory,RIM Registrations,IDMP Phase 2: Algorithms,Medium,High,High,Auto-on,Visible to All Users
+20R3,Regulatory,RIM Registrations,Manage Registered Details Enhancements,Medium,Medium,Medium,Auto-on,Visible to All Users
+20R3,Regulatory,RIM Registrations,Filter Grids & Select All in Manage Registered Details Wizard,N/A,N/A,Low,Auto-on,Visible to All Users
+20R3,Regulatory,RIM Submissions,Support for Default Values in Field Rules,N/A,Low,Medium,Configuration,Visible to Admins Only
+20R3,Regulatory,RIM Submissions,Additional Filtering in Content Plan Hierarchy Viewer,Low,Medium,Medium,Auto-on,Visible to All Users
+20R3,Regulatory,RIM Submissions,Save Views in Content Plan Hierarchy Viewer,Low,Low,Low,Auto-on,Visible to All Users
+20R3,Regulatory,RIM Submissions,Enablement Change:,N/A,N/A,Medium,Configuration,Visible to Admins Only
+20R3,Regulatory,Station Manager,Application Icon Update on Android,N/A,N/A,N/A,Auto-on,Visible to All Users
+20R3,Regulatory,Station Manager,Login with Keyboard on Android,N/A,Medium,High,Auto-on,Visible to All Users
+20R3,Regulatory,Station Manager,Settings Page Updates on Android,N/A,N/A,N/A,Auto-on,Visible to All Users
+20R3,Regulatory,Station Manager,Video Auto-Play Update on iOS,N/A,N/A,N/A,Auto-on,Visible to All Users
+20R3,Regulatory,Veeva Snap,Azure Support for Veeva Snap,High,High,High,Configuration,Visible to Admins Only
+20R3,Platform,Platform,OAuth Profiles: Enable Azure as a Standalone Authorization Server Type,High,High,High,Auto-on,Visible to Admins Only
+20R3,Platform,Platform,Atomic Security for Active Workflow Actions in Objects,High,High,High,Configuration,Visible to Admins Only
+20R3,Platform,Platform,Managing Sandbox Allowances,Medium,Medium,Medium,Auto-on,Visible to Admins Only
+20R3,Platform,Platform,Asynchronous Cascade Delete for Checklist Design,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Clinical Operations,CTMS,Change Issue Type Action,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Clinical Operations,CTMS,Seeding Issues on Monitoring Events,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Clinical Operations,CTMS,CDMS & Clinical Operations Vault Connection: SDV Requiredness,Low,Medium,High,Admin Checkbox,Visible to Admins Only
+21R1,Clinical Operations,CTMS,RBSM: Automated Risk Mitigation Actions,Low,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Clinical Operations,CTMS,Issue Management Enhancements,N/A,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Clinical Operations,CTMS,Yuzu: CTN Enhancements,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R1,Clinical Operations,"CTMS, SiteConnect, Study Startup, eTMF",Rule Set-Level Field Defaults,N/A,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Clinical Operations,"CTMS, SiteConnect, Study Startup, eTMF",USN Picker,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R1,Clinical Operations,"CTMS, Study Startup, eTMF",Site User Deprecation,N/A,Low,Medium,Auto-on,Visible to Admins Only
+21R1,Clinical Operations,"CTMS, Study Startup, eTMF",Atomic Security for Documents & Clinical Operations,N/A,High,High,Auto-on,Visible to All Users
+21R1,Clinical Operations,"CTMS, Study Startup, eTMF",User Profile Accessible for Existing Site Users,N/A,Low,Medium,Auto-on,Visible to All Users
+21R1,Clinical Operations,eTMF,Clinical Operations & RIM Vault Connection CrossLink Metadata Sync,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R1,Clinical Operations,eTMF,Clinical Operations & RIM Vault Connection Document Versioning,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R1,Clinical Operations,eTMF,TMF Transfer Archived Documents,Medium,High,High,Auto-on,Visible to All Users
+21R1,Clinical Operations,SiteConnect,Safety Distribution Email Support,Low,High,High,Configuration,Visible to Admins Only
+21R1,Clinical Operations,SiteConnect,Site Connect: Additional Vault Clinical Docs Support,N/A,High,High,Auto-on,Visible to Admins Only
+21R1,Clinical Operations,SiteConnect,Optional State Change for the Send Document via Clinical Network Action,N/A,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Clinical Operations,SiteConnect,Additional Study Sites Visible While Sending Safety Distributions,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R1,Clinical Operations,SiteConnect,Comments for Document Exchange,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R1,Clinical Operations,SiteConnect,Site Connect Enhancements,N/A,Medium,High,Auto-on,Visible to All Users
+21R1,Clinical Operations,SiteConnect,Veeva Site Connect Notifications Send After,N/A,Low,Low,Auto-on,Visible to All Users
+21R1,Clinical Operations,PromoMats,eCTD Compliance Package: Relative PDF Links Work in PromoMats,Low,Medium,Medium,Auto-on,Visible to All Users
+21R1,Quality,QMS,Quality Teams: Team Role Restrictions & Enhancements,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Quality,QMS,Quality to RIM Vault Connection Update & Resync Enhancements,Low,High,High,Configuration,Visible to Admins Only
+21R1,Quality,QMS,QMS: Product & Supplier Data Model,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+21R1,Quality,QMS,Quality Teams: Team Role Attribute Label Change,N/A,N/A,N/A,Auto-on,Visible to Admins Only
+21R1,Quality,"Training, Station Manager, Surveillance, QMS, QualityDocs",Quality Data Model Changes,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R1,Quality,QualityDocs,Process Navigator,High,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Quality,Station Manager,Station Manager: Record Based Categorization,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Quality,Training,Flexible Vault Training Job Scheduling,Low,Medium,Medium,Auto-on,Visible to Admins Only
+21R1,Quality,Training,Learner Homepage: Resources Section,Low,Low,Low,Configuration,Visible to Admins Only
+21R1,Quality,Training,Maximum Attempts for Quizzes,Low,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Quality,Training,Updates to Cloning Rules for Vault Training Objects,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+21R1,Quality,Training,Classroom Training Type Mobile Web Support,N/A,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Quality,Training,E-Learning Content Mobile Web Support,N/A,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Quality,Training,External Training Type Mobile Web Support,N/A,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Quality,Training,Learner Homepage: Mobile Web Support,N/A,Low,Low,Configuration,Visible to Admins Only
+21R1,Quality,Training,Update Training Assignment Due Date Without Sending Task Cancellation Email,N/A,Low,Low,Auto-on,Visible to All Users
+21R1,Regulatory,RIM Publishing,Continuous Non-eCTD Structure & TOC Publishing,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Regulatory,RIM Publishing,Publishing Progress Indicator,Low,Low,Medium,Configuration,Visible to Admins Only
+21R1,Regulatory,Platform,Object & Multi-Document Workflow: Send Notification Based on Roles,Medium,Low,Low,Configuration,Visible to Admins Only
+21R1,Regulatory,Platform,Object Lifecycle & Workflow: Long Text & Rich Text Fields,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Regulatory,Platform,PDF/A Document Rendition,Medium,Medium,High,Configuration,Visible to Admins Only
+21R1,Regulatory,Platform,Enhance Compare & Configuration Report to Provide Warnings,Low,Low,Medium,Auto-on,Visible to Admins Only
+21R1,Regulatory,Platform,Move Spark Queues to the Connection Tab,Low,N/A,N/A,Auto-on,Visible to Admins Only
+21R1,Regulatory,Platform,Rendition Status,Low,Medium,Medium,Auto-on,Visible to Admins Only
+21R1,Regulatory,Platform,Spark Integration Rule Support for Object Relationships,Low,Medium,Medium,Auto-on,Visible to Admins Only
+21R1,Regulatory,Platform,Spark Integration Rules: Allow Modification of Standard Integration Rules,Low,Medium,Medium,Auto-on,Visible to Admins Only
+21R1,Regulatory,Platform,Spark Integration Rules:,Low,Medium,Medium,Auto-on,Visible to Admins Only
+21R1,Regulatory,Platform,Additional Signature Token,N/A,High,High,Configuration,Visible to Admins Only
+21R1,Regulatory,Platform,Object Lifecycle & Workflow Expression Enhancement,N/A,Medium,Medium,Configuration,Visible to Admins Only
+21R1,Regulatory,Platform,Enablement Change: Atomic Security for Document Lifecycles,High,High,High,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Object & Multi-Document Workflow: Timeline View & Task Bar Enhancements,High,Medium,Medium,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Document Owner Can Undo Checkout for All Check Out Types,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Multi-Document Workflow: Edit Document Fields,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Additional Functions in Report Date Filters,Low,Medium,Medium,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Always Display the Document Inbox,Low,Low,Low,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Annotate Filters: Enhancements,Low,N/A,N/A,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Auto Claims Linking: Display Match Text Variation in Info Card,Low,Low,Low,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Show Document Number in Cart,N/A,Low,Low,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Template Search Enhancements,N/A,N/A,N/A,Auto-on,Visible to All Users
+21R1,Regulatory,Platform,Updated UI for Add Renditions,N/A,N/A,Low,Auto-on,Visible to All Users
+21R2,Clinical Operations,CTMS,CDMS & Clinical Operations Vault Connection: Protocol Deviations,High,High,High,Configuration,Visible to Admins Only
+21R2,Clinical Operations,CTMS,Conditional Actions on Trip Report Questions,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R2,Clinical Operations,CTMS,Add Yuzu Japanese CTN to the Application Settings Page,Low,Low,Low,Auto-on,Visible to Admins Only
+21R2,Clinical Operations,CTMS,Relabel Question Comment Required Object to Answer with Conditional Requirements,N/A,Low,Low,Auto-on,Visible to Admins Only
+21R2,Clinical Operations,CTMS,Support for EU Regulatory Agency Issue Notification Tracking,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+21R2,Clinical Operations,CTMS,Support for Subject Informed Consent Forms,N/A,High,High,Auto-on,Visible to Admins Only
+21R2,Clinical Operations,SiteConnect,Site Connect: Additional Vault Clinical Docs Support,N/A,High,High,Auto-on,Visible to Admins Only
+21R2,Clinical Operations,SiteConnect,Veeva eConsent Transfer with Site Connect,N/A,High,High,Auto-on,Visible to All Users
+21R2,Clinical Operations,Study Startup,Send Surveys to Non-Users,Medium,High,High,Configuration,Visible to Admins Only
+21R2,SiteVault,"SiteConnect, SiteVault Enterprise, SiteVault Free",New Exchangeable Document Types on Connected Studies,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R2,SiteVault,"SiteVault Enterprise, SiteVault Free",Digital Delegation Log Updates,High,High,High,Support,Visible to Admins Only
+21R2,SiteVault,"SiteVault Enterprise, SiteVault Free",Extensible SiteVault Permissions,High,High,High,Support,Visible to Admins Only
+21R2,SiteVault,"MedComms, PromoMats",Commercial Data Model Changes,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R2,SiteVault,PromoMats,Material ID,High,High,Medium,Configuration,Visible to Admins Only
+21R2,SiteVault,PromoMats,eCTD Compliance Package 2253 Form Update,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R2,SiteVault,PromoMats,Modular Content: Approval Document,Low,Medium,Medium,Configuration,Visible to Admins Only
+21R2,SiteVault,PromoMats,Modular Content: Rich Text Fields,N/A,Low,Low,Auto-on,Visible to All Users
+21R2,SiteVault,"PromoMats, RIM Publishing",PromoMats & RIM Vault Connection,High,High,High,Configuration,Visible to Admins Only
+21R2,Quality,QMS,Relationship Automation for Quality Objects: Quality,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R2,Quality,RIM Registrations,XEVMPD Procedure Number,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R2,Quality,RIM Submissions,Copy Into Content Plans,Medium,Medium,Medium,Admin Checkbox,Visible to Admins Only
+21R2,Quality,RIM Submissions,Extend Content Plan Duplicate Submission Join Detection,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R2,Quality,RIM Submissions,Asynchronous Content Plan Actions: Locking & Indicator,Low,Medium,Medium,Auto-on,Visible to All Users
+21R2,Quality,RIM Submissions,Collapse Action in Content Plan Hierarchy Viewer,Low,N/A,Medium,Auto-on,Visible to All Users
+21R2,Quality,RIM Submissions,Dynamically Adjust Content Plan Row Height to Fit Text,N/A,N/A,N/A,Auto-on,Visible to All Users
+21R2,Quality,"RIM Submissions, RIM Submissions Archive",Active Dossier,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R2,Quality,Platform,Action Menu Button Icon Change,N/A,N/A,N/A,Auto-on,Visible to All Users
+21R2,Quality,Platform,Attachments for Unclassified Documents,N/A,Low,Low,Auto-on,Visible to All Users
+21R2,Quality,Platform,Create Related Record in Record Create Dialog,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R2,Quality,Platform,Disable Office Online on All Vaults,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R2,Quality,Platform,Document Inbox Auto-On for All Vaults,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R2,Quality,Platform,Document Workflow on Binders,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R2,Quality,Platform,Enable Document Tags on All Vaults,N/A,Low,Low,Auto-on,Visible to All Users
+21R2,Quality,Platform,Infinite Document Scrolling,N/A,Low,N/A,Auto-on,Visible to All Users
+21R3,Clinical Operations,CTMS,Clinical Activities for Investigators,Medium,Medium,Medium,Auto-on,Visible to Admins Only
+21R3,Clinical Operations,CTMS,Expanded CTMS Subject Metrics,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,CTMS,Support for Resolving Orphaned Monitoring Reviewer Comments,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,CTMS,Trip Report Question Branching,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,CTMS,Yuzu: CTN PMDA XML Update,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,CTMS,Displaying Required Trip Report Questions Logic Update,N/A,Low,N/A,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Asynchronous Related Object Change State Entry Action,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Platform,Checklists: Automation for Aggregate Checklist Updates,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Platform,Document Reference Field Constraints,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Platform,Set Tokens in Instructions,Medium,Low,Low,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Platform,Single Verdict: Any Lifecycle Workflow,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Platform,Start Step Rule: Required Controls,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Platform,Update Task Due Date on Object Date Field Update,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Platform,Workflow Cancellation Actions,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Platform,Workflow Cancellation Comment,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Platform,Admin Configuration Tab Updates,Low,N/A,N/A,Auto-on,Visible to Admins Only
+21R3,Clinical Operations,Platform,On Behalf Of Auditing Export Enhancements,Medium,High,High,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Re-Render Previous Rendition Versions,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Read & Understood Workflows: Restrict Task Completion by Delegate Users,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Distinct Count in Reports,Low,Low,Low,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Export Binder Notifications: Show Failed Document Exports,Low,Low,Low,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Formula Fields in Multi- Pass Reports,Low,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,HVO Performance Optimization on Related Object Section & Advanced Search,Low,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Multi-Down Object Reports Support Summary Calculations,Low,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Remove Links in Report Exports,Low,Low,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Search Modifiers on Object Tabs,Low,Low,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,Platform,Substring Matching for,Low,Medium,Low,Auto-on,Visible to All Users
+21R3,Clinical Operations,QMS,Generate Quality Document from Record: Batch Release Process Support,Low,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,QMS,Generate Quality Document from Record: Support for Documents Based on Document Templates,Low,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,"QMS, QualityDocs, Station Manager, Surveillance, Training",Quality Data Model Changes,N/A,High,High,Auto-on,Visible to All Users
+21R3,Clinical Operations,"QMS, QualityDocs, Training",Enable Reference Objects for Quality Suite Vaults,N/A,Medium,Medium,Auto-on,None
+21R3,Clinical Operations,QualityDocs,MDCC: Change Authorization Section,High,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,QualityDocs,Process Navigator: Steady State Only Flag,Low,Low,Medium,Admin Checkbox,Visible to Admins Only
+21R3,Clinical Operations,QualityDocs,MDCC: Prevent State Changes on Non-Latest Document Versions,High,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,QualityDocs,Remove Document from Document Change Control Usability Improvements,High,High,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,QualityDocs,DCC Banner Utilizes Label of Document Change Control Object,Low,N/A,N/A,Auto-on,Visible to All Users
+21R3,Clinical Operations,QualityDocs,Process Navigator: Adjustable Hierarchy Limits,Low,Medium,Medium,Support,None
+21R3,Clinical Operations,"QualityDocs, Station Manager",Station Manager: Picklist Based Categorization Deprecated,N/A,Low,Medium,Auto-on,Visible to Admins Only
+21R3,Clinical Operations,Station Manager,Station Manager App Update Enforcement: Data Model Update,Low,Low,Low,Auto-on,Visible to Admins Only
+21R3,Clinical Operations,Surveillance,Multi-Country Adverse Events Reporting,High,High,High,Auto-on,Visible to All Users
+21R3,Clinical Operations,Surveillance,VPS: Validation Results Storage,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,Surveillance,Adverse Event Reports for TGA (Australia),Low,High,High,Auto-on,Visible to All Users
+21R3,Clinical Operations,Surveillance,VPS Data Model Changes,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,Training,Training Self-Enrollment,Medium,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,Training,Allow Description Field Requiredness on Curriculum & Learner Role Objects,N/A,Low,Low,Auto-on,Visible to Admins Only
+21R3,Clinical Operations,Training,Increased Limit for Training Join Relationships,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+21R3,Clinical Operations,Training,Rule References Upon Retiring Training Objects,N/A,Low,N/A,Auto-on,Visible to Admins Only
+21R3,Clinical Operations,Training,Training Content Set Object is Not Cloned,N/A,Low,Medium,Auto-on,Visible to Admins Only
+21R3,Clinical Operations,Training,Validate Object Type for Imported Training,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+21R3,Clinical Operations,RIM Submissions,Update Copy into Content Plan Error Validation,N/A,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,RIM Submissions Archive,Process ZIP Import at the Submission Level,Medium,Medium,Medium,Admin Checkbox,Visible to Admins Only
+21R3,Clinical Operations,RIM Submissions Archive,Empty Section Indicator,Low,Low,Medium,Admin Checkbox,Visible to Admins Only
+21R3,Clinical Operations,RIM Submissions Archive,EAEU Import & Viewing R.022 XML,Medium,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,RIM Submissions Archive,Dynamic Ordering for Correspondences,N/A,Low,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,RIM Submissions Archive,Informational Warnings in Email Notifications for All Import Methods,N/A,Low,Low,Auto-on,Visible to All Users
+21R3,Clinical Operations,"SiteVault Enterprise, SiteVault Free",Protected PDFs for 1572s,N/A,High,High,Configuration,Visible to Admins Only
+21R3,Clinical Operations,"SiteVault Enterprise, SiteVault Free",SiteVault Setup Assistant,N/A,Medium,Medium,Configuration,Visible to Admins Only
+21R3,Clinical Operations,"SiteVault Enterprise, SiteVault Free",Research Organizations Selectable in the Vault Selector,High,Medium,High,Auto-on,Visible to All Users
+21R3,Clinical Operations,"SiteVault Enterprise, SiteVault Free",Scheduled Study Access for External Users,High,High,High,Auto-on,Visible to All Users
+21R3,Clinical Operations,"SiteVault Enterprise, SiteVault Free",Create Draft from Original,Low,Medium,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,"SiteVault Enterprise, SiteVault Free",Connected Studies: Exchangeable Organization Profile Document Update,N/A,Medium,Low,Auto-on,Visible to All Users
+21R3,Clinical Operations,"SiteVault Enterprise, SiteVault Free",Share Non-eConsent Documents with Participants,N/A,High,Medium,Auto-on,Visible to All Users
+21R3,Clinical Operations,"SiteVault Enterprise, SiteVault Free",SiteVault Data Model Changes,N/A,Medium,Medium,Auto-on,Visible to All Users
+22R1,Clinical Operations,CTMS,Monitoring Schedule Planning,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,CTMS,RBSM: Critical Data & Processes,Low,Medium,Medium,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,CTMS,Support to Identify Non- enrolling Sites,Low,Medium,Medium,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,"CTMS, Site Connect, Study Startup, Vault Payments, eTMF",Clinical Operations Data Model Changes,N/A,High,High,Auto-on,Visible to All Users
+22R1,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Milestone Roll Up Enhancements,Medium,Medium,Medium,Admin Checkbox,Visible to Admins Only
+22R1,Clinical Operations,"CTMS, Study Startup, eTMF, Vault Payments",Restrict Document Study to Single Value,Medium,Medium,High,Admin Checkbox,Visible to Admins Only
+22R1,Clinical Operations,"CTMS, Study Startup, eTMF, Vault Payments",Automate Milestone State Changes: Additional Date Field Triggers,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R1,Clinical Operations,Vault Payments,Site Payment Holdbacks,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,Vault Payments,Site Overhead Calculations,N/A,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,Vault Payments,Subject Payment Tracking Rules,N/A,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,CTMS<>CDMS,CDMS/ClinOps: Support for Multiple CDMS Vaults,Low,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,CTMS<>CDMS,CDMS/ClinOps: Single Study Refresh,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,eTMF,TMF Bot: Auto- Classification Enhancements,Medium,Medium,High,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,eTMF,Clinical Email Ingestion: Relevant Communications,Medium,High,High,Configuration,Visible to Admins Only
+22R1,Clinical Operations,eTMF,TMF Bot: Bulk Upload Pipeline,Low,Medium,High,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,eTMF,Transfer CSV Reports for TMF Transfer,Low,Medium,Low,Auto-on,Visible to All Users
+22R1,Clinical Operations,"Study Startup, eTMF",Milestone Gating for EDL Item Requiredness,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,Site Connect,Cancel Site Connect Agreement Invitation,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,Site Connect,Mark Site Connect Document as Rescinded,Medium,Medium,Low,Configuration,Visible to Admins Only
+22R1,Clinical Operations,Site Connect,Site Connect Details User Action,Low,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,Site Connect,Site Connect: Additional Vault Clinical Docs Support,N/A,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,MedComms,"Customisable ""From"" Email Address for Case Response Emails",Medium,Medium,Low,Configuration,Visible to Admins Only
+22R1,Clinical Operations,MedComms,Allow Case Response Emails to be Deleted,Low,High,High,Configuration,Visible to Admins Only
+22R1,Clinical Operations,MedComms,Medical Inquiry UI: Case Contact Section,Low,Low,Low,Configuration,Visible to Admins Only
+22R1,Clinical Operations,MedComms,Medical Inquiry UI: Admin Page,N/A,N/A,N/A,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,MedComms,Medical Inquiry: CRM Inquiry Pull Job Timing Enhancement,N/A,Medium,Medium,Auto-on,Visible to All Users
+22R1,Clinical Operations,"MedComms, Multichannel, PromoMats",CRM Document Field Label Updates,N/A,N/A,N/A,Auto-on,Visible to All Users
+22R1,Clinical Operations,"MedComms, PromoMats",External Viewer: Number Of Views,Low,Low,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,"MedComms, PromoMats",Transparency Support in Automated Image Renditions,Low,Low,N/A,Configuration,Visible to Admins Only
+22R1,Clinical Operations,"MedComms, PromoMats",Commercial Data Model Changes,N/A,Medium,Medium,Auto-on,Visible to All Users
+22R1,Clinical Operations,PromoMats,Modular Content Approval Document Additional Lifecycle Support,Low,Medium,Medium,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,PromoMats,Automated Image Rendition: Include Source Document Name,Low,Low,Low,Configuration,Visible to Admins Only
+22R1,Clinical Operations,Platform,Skip Document State Change in Object Lifecycle Entry Action,Low,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,Platform,Bulk Actions on Record Actions,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,Platform,Configuration Management: Allow Outbound & Inbound Packages Enabled by Default on Align Vaults,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,Platform,Configuration Management: Comparison of XMLString Component Attributes when Deploying Packages,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,Platform,Data VPK: Validate VQL in Dataset Filter,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,Platform,Enhancements to Reference Lookups,N/A,Low,Low,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,Platform,Jobs: Disable Session ID Token in External URL Call Configuration,N/A,High,High,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,Platform,Jobs: Display Start Time for Completed Jobs,N/A,Low,N/A,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,Platform,Object and Document Field Types for Integration Field Rules,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+22R1,Clinical Operations,"RIM Submissions, RIM Submissions Archive, RIM Publishing, RIM Registrations",Translation Document Relationship Flag,Low,Low,Low,Admin Checkbox,Visible to Admins Only
+22R1,Clinical Operations,"RIM Publishing, RIM Registrations, RIM Submissions, RIM Submissions Archive",22R1 RIM Data Model Changes,N/A,Medium,Medium,Auto-on,Visible to All Users
+22R1,Clinical Operations,"RIM Publishing, RIM Submissions Archive, RIM Submissions, RIM Registrations",Content Plan Enablement Update,N/A,Medium,Medium,Auto-on,Visible to All Users
+22R1,Clinical Operations,"RIM Publishing, RIM Submissions",Manage & Edit Table of Contents (TOC),Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,RIM Registrations,IDMP Viewer,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,RIM Registrations,Labeling Process Improvements,N/A,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Clinical Operations,"RIM Submissions, RIM Submissions Archive",Select Section in Add to Active Dossier Dialog,Low,Medium,Medium,Auto-on,Visible to All Users
+22R1,Clinical Operations,"RIM Submissions, RIM Submissions Archive",Show Only Pending Toggle in Active Dossier Editor,N/A,Low,Medium,Auto-on,Visible to All Users
+22R1,Clinical Operations,RIM Submissions Archive,Display Inactive Applications & Submissions in Viewer,Low,Medium,Medium,Admin Checkbox,Visible to Admins Only
+22R1,Clinical Operations,RIM Submissions Archive,Restrict Submissions Archive Access to Full User Licensed Vault Users,Low,High,Medium,Auto-on,Visible to All Users
+22R1,Vault Connections,Promomats<>RIM,PromoMats/RIM: Conditional Transfer Support Using Query Object Rules (QORs),Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R1,Vault Connections,Promomats<>RIM,PromoMats/RIM: RIM Reference Model Support,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R1,SiteVault,"Site Connect,",Connected Study Details,Low,Medium,Medium,Configuration,Visible to Admins Only
+22R2,Clinical Operations,CTMS,Clinical CRM Connection,Medium,High,High,Configuration,Visible to Admins Only
+22R2,Clinical Operations,CTMS,Standard Content Fields on CTMS Objects,N/A,Low,Medium,Auto-on,Visible to Admins Only
+22R2,Clinical Operations,CTMS,CTMS Oversight Metrics,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R2,Clinical Operations,CTMS,Metrics: Status Snapshot Refinements,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R2,Clinical Operations,CTMS,Recruitment Planning: Metric Over Time Expansion,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R2,Clinical Operations,CTMS,Prevent Duplicate Monitored Subjects & Monitored Subject Visits,N/A,Medium,Medium,Auto-on,Visible to All Users
+22R2,Clinical Operations,CTMS,Recalculate Enrollment Actuals: Notification,N/A,Low,Low,Auto-on,Visible to All Users
+22R2,Clinical Operations,CTMS,Yuzu CTN: Site Medical Department Not Required,N/A,Medium,High,Auto-on,Visible to All Users
+22R2,Clinical Operations,"CTMS, Site Connect, Study Startup, Vault Payments, eTMF",Clinical Operations Data Model Changes,N/A,High,High,Auto-on,Visible to All Users
+22R2,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Reference Sites,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R2,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Sync Principal Investigator Field with Study Person,Low,Medium,Medium,Admin Checkbox,Visible to Admins Only
+22R2,Clinical Operations,CTMS<>CDMS,Vault Clinical Operations to CDMS Connection: Restricted Data,High,High,High,Admin Checkbox,Visible to Admins Only
+22R2,Clinical Operations,CTMS<>CDMS,Vault Clinical Operations to CDMS Connection: Arms & Cohorts,Medium,High,High,Configuration,Visible to Admins Only
+22R2,Clinical Operations,eConsent,eConsent Documents to SiteVault,Medium,High,High,Configuration,Visible to Admins Only
+22R2,Clinical Operations,"eConsent, ePRO",Connected Studies for ePRO & eConsent,Medium,High,High,Configuration,Visible to Admins Only
+22R2,Clinical Operations,"Site Connect, ePRO, eConsent",Connected Study Types in Clinical Operations,Low,Medium,High,Auto-on,Visible to Admins Only
+22R2,Clinical Operations,ePRO,ePRO in Clinical Operations,High,Medium,Medium,Support,None
+22R2,Clinical Operations,Platform,Outbound Packages: View & Add Dependencies,Low,Medium,Medium,Auto-on,Visible to Admins Only
+22R2,Clinical Operations,Platform,Add Archive Option to Search Settings,Low,Medium,Medium,Admin Checkbox,Visible to Admins Only
+22R2,Clinical Operations,Platform,Add CJK Indexing Option to Search Settings,Low,Medium,Medium,Admin Checkbox,Visible to Admins Only
+22R2,Clinical Operations,Platform,Add Documents to Expanded Search,Low,Medium,Medium,Configuration,Visible to Admins Only
+22R2,Clinical Operations,Platform,Link Records to Permalinks,Low,Medium,Low,Configuration,Visible to Admins Only
+22R2,Clinical Operations,Platform,Delegate Admin CSV Export Enhancement,N/A,Low,Medium,Auto-on,Visible to Admins Only
+22R2,Clinical Operations,Platform,Increase Number of Tabs Allowed,N/A,Low,Low,Auto-on,Visible to Admins Only
+22R2,Clinical Operations,Platform,Jobs: Audit Logs for External URL Call Jobs,N/A,High,High,Auto-on,Visible to Admins Only
+22R2,Clinical Operations,Platform,Notification Template Tab,N/A,Low,Low,Auto-on,Visible to Admins Only
+22R2,Clinical Operations,Platform,Platform Data Model Changes,N/A,Medium,Medium,Auto-on,Visible to Admins Only
+22R2,Clinical Operations,Platform,View Delete Warning when Deleting a Tab,N/A,Low,N/A,Auto-on,Visible to Admins Only
+22R2,Quality,LIMS,Vault LIMS,High,High,High,Configuration,Visible to Admins Only
+22R2,Quality,"LIMS, QMS, QualityDocs, Station Manager, Surveillance, Training",Quality Data Model Changes,N/A,High,High,Auto-on,Visible to All Users
+22R2,Quality,"LIMS, QMS, Surveillance, Training, QualityDocs",Unit of Measure Object,Low,Medium,Medium,Auto-on,Visible to Admins Only
+22R2,Quality,QMS,Extend Recurrence Check to Support Standard Object Types on Quality Event,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R2,Quality,QMS,External Notifications: Distribution Group Filter Fields & Membership Automation,Medium,Low,Low,Configuration,Visible to Admins Only
+22R2,Quality,QMS,Quality Team Conditional Role Exclusivity,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R2,Quality,QMS,Risk Thresholds,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R2,Quality,QMS,Support 1/2/3 Dimensions for Risk Matrix,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R3,Clinical Operations,CTMS,Clinical Operations to Medical CRM Connection: Standard Field Mappings,Medium,Medium,Medium,Auto-on,Visible to Admins Only
+22R3,Clinical Operations,CTMS,Addition of Oversight Tab,N/A,N/A,N/A,Configuration,Visible to Admins Only
+22R3,Clinical Operations,CTMS,Clinical Operations to Medical CRM Connection: Activity Deletion Support,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,CTMS,Yuzu: CTN Change Log Enhancements,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,"CTMS, Study Startup, Vault Payments, eTMF",Clinical Operations Data Model Changes,N/A,High,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,Vault Payments,Automate Payment Adjustments,Medium,Medium,Medium,Admin Checkbox,Visible to Admins Only
+22R3,Clinical Operations,Vault Payments,Generate Payable Items available in Fee Schedule Workflows,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R3,Clinical Operations,Vault Payments,Payment Limits & Date Effectivity,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,CTMS<>CDMS,ClinOps/CDMS: Study Pause,Medium,Medium,High,Configuration,Visible to All Users
+22R3,Clinical Operations,eConsent,eConsent Sponsor Templates,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,eTMF,TMF Bot: Prediction Metrics,Low,Medium,Medium,Auto-on,Visible to Admins Only
+22R3,Clinical Operations,eTMF,Support for Transferring Inactive Document Types in TMF Transfer,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,eTMF,Vault Mobile: TMF Bot Support,Medium,Medium,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,eTMF,Auto-Classification of Email Attachments,N/A,Medium,High,Auto-on,Visible to All Users
+22R3,Clinical Operations,"Study Startup, eTMF",Email to Vault: Create Documents from Attachments,Medium,Medium,Medium,Configuration,Visible to Admins Only
+22R3,Clinical Operations,"Study Startup, eTMF",Increment # Expected from Matched Documents,Medium,Medium,Medium,Support,None
+22R3,Clinical Operations,Site Connect,Site Connect Features Now in Digital Trials Platform RIA,N/A,N/A,N/A,N/A,None
+22R3,Clinical Operations,"SiteVault eReg,",SiteVault (eRegulatory &,N/A,N/A,N/A,N/A,None
+22R3,Clinical Operations,Platform,Enterprise Home Page: New Grid View,Low,N/A,Low,Auto-on,Visible to All Users
+22R3,Clinical Operations,Platform,Freeze Headers and Columns in Document Grid Layout,Low,N/A,Low,Auto-on,Visible to All Users
+22R3,Clinical Operations,Platform,Multi-Document Viewer UI Updates,Low,N/A,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,Platform,Notifications: Read & Unread status,Low,Low,Low,Auto-on,Visible to All Users
+22R3,Clinical Operations,Platform,OCR Extended Language Support,Low,Medium,High,Auto-on,Visible to All Users
+22R3,Clinical Operations,Platform,Saved Views on Dynamic Tabs,Low,Medium,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,Platform,User Mention Notifications Only Sent for New User Mentions,Low,Low,Low,Auto-on,Visible to All Users
+22R3,Clinical Operations,Platform,Adding Section to Binder in Outline View Confirmation Dialog,N/A,N/A,N/A,Auto-on,Visible to All Users
+22R3,Clinical Operations,Platform,Document Content Reindex,N/A,Medium,Medium,Auto-on,Visible to All Users
+22R3,Clinical Operations,Platform,Document Related,N/A,Medium,Medium,Auto-on,Visible to All Users

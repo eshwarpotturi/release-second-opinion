@@ -1,0 +1,25 @@
+release,feature,frm,to,final,A,B
+19R1,Formulas Support Multi-Value Picklists,Low,Medium,Low,Medium,Medium
+19R1,Salesforce Delegated Auth Supports URLs Without Salesforce Instance Names,High,N/A,N/A,Medium,High
+19R1,Document Type Admin Displays Name,Low,N/A,N/A,N/A,N/A
+19R1,Milestone/EDL Creation Job Runs as System,Medium,N/A,N/A,High,High
+19R1,Quality Teams,High,Medium,Medium,Medium,Medium
+19R1,Vault Quality Station Manager Client Permissions,Low,Medium,N/A,High,Medium
+19R1,Vault Quality Station Manager Enhancements,Low,Medium,N/A,High,Medium
+19R1,Exclude Correspondence from Bulk Export,Low,Medium,Medium,Low,Medium
+19R2,Mandatory Reviewers for Document Change Control,Medium,High,High,Medium,Medium
+19R2,Quality Teams: Administration & General Availability,High,Low,Low,Medium,Medium
+19R2,Clinical Version-Aware EDLs,Medium,N/A,N/A,Medium,Medium
+19R3,Allow Multi-Select on Standard Document Fields,Low,N/A,N/A,Medium,Medium
+19R3,Simple Join Objects Include Lifecycle State Fields,Low,N/A,N/A,Medium,Medium
+19R3,Limited Release Sandbox,Low,Medium,Medium,Medium,Medium
+19R3,Remove Deprecated Re-Render Options,Low,N/A,N/A,N/A,N/A
+20R1,Expand Time Period for Login Audit Logs,Medium,N/A,N/A,High,High
+20R1,New Shared Field for CLM iOS Native Resolution,N/A,Low,Low,Low,Low
+20R1,Study Team Role Field Enhancements,Low,High,High,Medium,Medium
+20R3,Video Auto-Play Update on iOS,Low,N/A,N/A,N/A,N/A
+20R3,Settings Page Updates on Android,Low,N/A,N/A,N/A,N/A
+20R3,IDMP Phase 2: Data Model,Medium,N/A,Medium,High,High
+21R1,XEVMPD Enhancements,Medium,N/A,Medium,Medium,Medium
+21R1,Atomic Security for Documents & Clinical Operations,Medium,N/A,N/A,High,High
+21R1,Issue Management Enhancements,Low,N/A,N/A,Medium,Medium

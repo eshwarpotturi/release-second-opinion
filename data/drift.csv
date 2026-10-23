@@ -1,0 +1,54 @@
+release,feature,from,to
+19R1,Formulas Support Multi-Value Picklists,Low,Medium
+19R1,Activate & Inactivate Picklist Values,Medium,Low
+19R1,Formatted Output Report Execution on Closed/Locked Records,Medium,Low
+19R1,Records in Document Information Always Appear as Clickable Links,Medium,Low
+19R1,Salesforce Delegated Auth Supports URLs Without Salesforce Instance Names,High,N/A
+19R1,Additional Languages for Multilingual Document Handling,Low,N/A
+19R1,Document Type Admin Displays Name,Low,N/A
+19R1,Enhancements for Vault File Manager,Low,Medium
+19R1,Milestone/EDL Creation Job Runs as System,Medium,N/A
+19R1,Study eBinder,N/A,High
+19R1,Quality Teams,High,Medium
+19R1,Vault Quality Station Manager Client Permissions,Low,Medium
+19R1,Vault Quality Station Manager Enhancements,Low,Medium
+19R1,Submission Administrative Information Management,High,Medium
+19R1,Exclude Correspondence from Bulk Export,Low,Medium
+19R1,19R1 Additional RIM Data Model Updates,Low,Medium
+19R1,Veeva Snap: ADFS OAuth Support (ADAL),Medium,High
+19R2,Report UI Changes,Low,N/A
+19R2,Mandatory Reviewers for Document Change Control,Medium,High
+19R2,Quality Teams: Administration & General Availability,High,Low
+19R2,Clinical Version-Aware EDLs,Medium,N/A
+19R2,Vault Training: Validation & Learner Enhancement,Medium,N/A
+19R3,Allow Multi-Select on Standard Document Fields,Low,N/A
+19R3,Relabel Doc Info Page Edit Button,Low,N/A
+19R3,Simple Join Objects Include Lifecycle State Fields,Low,N/A
+19R3,Limited Release Sandbox,Low,Medium
+19R3,Scalable Overlay Processing,Medium,N/A
+19R3,Remove Deprecated Re-Render Options,Low,N/A
+20R1,Expand Time Period for Login Audit Logs,Medium,N/A
+20R1,New Shared Field for CLM iOS Native Resolution,N/A,Low
+20R1,Agreement Wizard,Low,N/A
+20R1,Study Team Role Field Enhancements,Low,High
+20R2,Vault Digital Publishing Security Update,Low,N/A
+20R3,Remove Milestone Inactivation from Archive TMF Job,N/A,Low
+20R3,Smart Profile Document Transfer,Medium,N/A
+20R3,Create Activities per Application,Low,Medium
+20R3,Video Auto-Play Update on iOS,Low,N/A
+20R3,Settings Page Updates on Android,Low,N/A
+20R3,Smart Profile Document Transfer,Low,Medium
+20R3,Show Current Time in Overlays,Low,N/A
+20R3,Filter by All Dates in Object Record Audit Trail,Low,N/A
+20R3,Decrease Maximum Size for Flash Report Emails,Low,N/A
+20R3,New API Parameter for Adding Large Size Asset Renditions,Medium,Low
+20R3,IDMP Phase 2: Data Model,Medium,N/A
+20R3,Learner Homepage,Low,Medium
+21R1,XEVMPD Enhancements,Medium,N/A
+21R1,Atomic Security for Documents & Clinical Operations,Medium,N/A
+21R1,Contains Operator for Advanced Filtering,Low,N/A
+21R1,Issue Management Enhancements,Low,N/A
+21R1,Show in Tab for Related Document Section,Medium,Low
+21R2,Batch Release Process Support,High,Low
+21R2,Enablement Change: Extensible Controlled Copy,High,N/A
+21R2,Language Field Alignment,Low,N/A
