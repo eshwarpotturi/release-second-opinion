@@ -2,20 +2,30 @@
 
 **Live dashboard:** https://eshwarpotturi.github.io/release-second-opinion/
 
-Veeva rates the validation risk of every feature in each Vault release, and later corrects some of those ratings. This page uses Veeva's own change logs to show how its ratings move after publishing.
+How often does Veeva change its own risk ratings after publishing them, and in which direction? This page reads Veeva's change logs for 23 Vault releases (2019 to 2026) and shows every rating change.
 
-## Finding
+## Findings
 
-- Veeva corrected 129 ratings that publish an old and a new value (19R1 to 21R2 and 25R3 to 26R2).
-- 93 (72%) lowered the rating; 36 raised it.
-- 69 (53%) changed whether the feature gets tested: 46 switched testing off, 23 switched it on.
-- The same pattern holds five years apart: 70% lowered in 2019 to 2021, 74% in 2025 to 2026.
-- Takeaway: treat the first published rating as a cautious estimate.
+- **Veeva rarely changes its mind.** In the 11 releases that publish old and new ratings, 91 of 2,547 features (3.6%) were revised after publishing.
+- **When it does, it usually lowers the risk.** 86 of 121 revisions (71%) lowered the rating.
+- **Few revisions change a testing decision.** 31 switched testing off and 17 switched it on (1.9% of features). Planning from the first list would over-test 31 and miss 17.
+- **"Low" is the least settled rating.** 6.7% of features first rated Low were revised, against 3.6% for Medium, 2.6% for High and 0.8% for N/A. The commonest move is Low to N/A, which does not change testing.
+- **The overall bar is steady.** Share rated High: 10.1% (2019 to 2021), 8.3% (2022), 10.2% (2023 to 2024), 11.3% (2025 to 2026).
+- Revision rates differ by Veeva section: highest in Medical and Quality, lowest in Safety and eConsent.
 
-Limits: releases 21R3 to 25R2 list corrected features without old and new ratings, so they are not counted. 62 of the 129 corrections could be placed in a Veeva section; 67 could not, because the feature is not in the final list.
+## Correction to an earlier version
 
-## Data and rebuild
+An earlier version said Veeva's High share fell from 12.3% to 5.0%, and that the first rating is "a draft" because 53% of corrections crossed the testing line. Both came from an incomplete read of the 2019 to 2022 PDFs (539 features instead of 1,817) and from counting only the corrections with old and new ratings. The complete data does not support the falling bar, and the testing-line effect is much smaller.
 
-`data/features.csv` (4,016 features from 23 public Veeva Vault release impact assessments), `data/drift.csv` (corrections), `data/story.json` (corrections with section). Rebuild: `python3 scripts/story_data.py` then `python3 scripts/build_story.py`. Release impact assessments are Veeva's and not redistributed.
+## Data
 
-An earlier version compared Veeva with GPT ratings. It is removed because the comparison does not show that Veeva is wrong; the older scripts and `data/` files remain in the repo.
+- `data/features_all.csv`: 5,698 features from 23 public Veeva Vault release impact assessments, including the eConsent/eCOA/Sites and QualityOne/RegulatoryOne sheets.
+- `data/drift.csv`: corrections with old and new ratings (19R1 to 21R2, 25R3 to 26R2).
+- `data/story.json`: everything the page shows.
+- Releases 21R3 to 25R2 list corrected features by name only (120 revisions, direction not published). They are counted in the section and release charts, shown in grey, but not in the direction figures.
+
+Limits: one vendor; the testing line is Medium and High; some revisions could not be placed in a section (their feature is not in the final list); a feature revised twice is counted once, from first to last rating.
+
+## Rebuild
+
+`python3 scripts/parse_pdf2.py` (PDF features), `scripts/parse_extra.py <folder of xlsx>` (extra sheets), `scripts/study.py` (all analysis, writes `data/story.json`), `scripts/build_story.py` (writes `index.html`). Release impact assessments are Veeva's and not redistributed. Earlier scripts that rated features with GPT remain in the repo but are not used.
